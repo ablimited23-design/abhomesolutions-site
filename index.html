@@ -62,7 +62,7 @@
   .section-head h2{font-size:clamp(28px,4vw,44px);text-transform:uppercase;font-weight:900;line-height:1.02;margin:14px 0 14px;color:var(--cream)}
   .section-head p{color:var(--cream-dim);font-size:19px}
   .services{display:grid;grid-template-columns:repeat(4,1fr);gap:18px}
-  .svc{background:var(--navy-2);border:1px solid var(--line);border-radius:7px;padding:26px 22px;transition:.28s;position:relative;overflow:hidden}
+  .svc{background:var(--navy-2);border:1px solid var(--line);border-radius:7px;padding:26px 22px;transition:.28s;position:relative;overflow:hidden;display:block}
   .svc::before{content:"";position:absolute;left:0;top:0;height:3px;width:0;background:var(--gold);transition:width .3s}
   .svc:hover{transform:translateY(-5px);border-color:var(--gold)}
   .svc:hover::before{width:100%}
@@ -78,6 +78,7 @@
   .hg .eyebrow{color:#9a6e16}.hg .eyebrow::before{background:#9a6e16}
   .hg h2{color:var(--navy);font-size:clamp(28px,4vw,44px);text-transform:uppercase;font-weight:900;line-height:1.02;margin:14px 0 18px}
   .hg p.body{color:#3a3a32;font-size:18px;margin-bottom:18px}
+  .hg p.body a{color:#9a6e16;text-decoration:underline}
   .hg-tiles{display:grid;grid-template-columns:1fr 1fr;gap:14px}
   .tile{background:#fff;border:1px solid #e2d9bf;border-radius:7px;padding:22px;box-shadow:0 12px 30px -22px rgba(10,22,40,.4)}
   .tile .label{font-family:'Archivo';font-weight:800;font-size:13px;letter-spacing:.08em;text-transform:uppercase;color:var(--navy)}
@@ -124,17 +125,17 @@
 
 <header class="nav">
   <div class="wrap">
-    <a href="#" class="brand">
+    <a href="/" class="brand">
       <svg class="shield" viewBox="0 0 30 34" fill="none"><path d="M15 1 28 6v11c0 9-6.5 13.5-13 16C8.5 30.5 2 26 2 17V6L15 1Z" stroke="#d4a13c" stroke-width="2" fill="rgba(212,161,60,.08)"/><path d="M9.5 16.5l3.8 3.8 7-8" stroke="#f0c14b" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg>
       AB Home Solutions <span class="tm">HomeGuard™</span>
     </a>
     <nav class="links">
-      <a href="#resources">Resources</a>
-      <a href="#homeguard">HomeGuard™</a>
-      <a href="#blog">Blog</a>
-      <a href="#about">About</a>
+      <a href="/resources">Resources</a>
+      <a href="/homeguard">HomeGuard™</a>
+      <a href="/blog">Blog</a>
+      <a href="/about">About</a>
     </nav>
-    <a href="#start" class="btn btn-gold">Get the Free Guide →</a>
+    <a href="/start" class="btn btn-gold">Get the Free Guide →</a>
   </div>
 </header>
 
@@ -146,8 +147,8 @@
         <h1 class="fade d2">Know Your Home.<br>Protect Your Money.<br><em>Skip the Scams.</em></h1>
         <p class="lead fade d3">AB Home Solutions is a free resource hub built by people who've worked the trades. We help DMV homeowners maintain their property — inside and out — and make confident, informed decisions before they ever hire a contractor. Education over profits.</p>
         <div class="cta-row fade d4">
-          <a href="#start" class="btn btn-gold">Get the Free Guide</a>
-          <a href="#homeguard" class="btn btn-ghost">Explore HomeGuard™</a>
+          <a href="/start" class="btn btn-gold">Get the Free Guide</a>
+          <a href="/homeguard" class="btn btn-ghost">Explore HomeGuard™</a>
         </div>
       </div>
       <div class="hero-card fade d5">
@@ -180,26 +181,26 @@
       <p>Everything here is built to put you in control of your home — covering both the inside and the outside, from routine upkeep to hiring the right help.</p>
     </div>
     <div class="services">
-      <div class="svc">
+      <a class="svc" href="/homeguard">
         <svg class="ico" viewBox="0 0 40 40" fill="none"><rect x="7" y="5" width="22" height="30" rx="2" stroke="currentColor" stroke-width="2.4"/><path d="M14 3h8v5h-8zM13 15h14M13 21h14M13 27h9" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"/></svg>
         <h3>HomeGuard™ System</h3>
         <p>A straightforward monthly maintenance action plan that protects your investment and your peace of mind.</p>
-      </div>
-      <div class="svc">
+      </a>
+      <a class="svc" href="/contractor-clarity">
         <svg class="ico" viewBox="0 0 40 40" fill="none"><path d="M20 4l14 5v9c0 9-6 14-14 18-8-4-14-9-14-18V9l14-5Z" stroke="currentColor" stroke-width="2.4" stroke-linejoin="round"/><path d="M13 20l4.5 4.5L28 14" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg>
         <h3>Contractor Clarity™</h3>
         <p>A step-by-step framework for vetting and choosing reputable local pros — before you sign anything.</p>
-      </div>
-      <div class="svc">
+      </a>
+      <a class="svc" href="/resources">
         <svg class="ico" viewBox="0 0 40 40" fill="none"><path d="M10 4h14l6 6v26H10V4Z" stroke="currentColor" stroke-width="2.4" stroke-linejoin="round"/><path d="M24 4v6h6M15 22l3 3 7-7" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg>
         <h3>Guides &amp; Checklists</h3>
         <p>Downloadable, printable resources that make routine home tasks simple to track and stay ahead of.</p>
-      </div>
-      <div class="svc">
+      </a>
+      <a class="svc" href="/blog">
         <svg class="ico" viewBox="0 0 40 40" fill="none"><path d="M6 8h28v22H6zM6 14h28" stroke="currentColor" stroke-width="2.4" stroke-linejoin="round"/><path d="M11 21h10M11 26h14" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"/></svg>
         <h3>Knowledge Base</h3>
         <p>Plain-English articles that decode home maintenance and the tactics scammers use against homeowners.</p>
-      </div>
+      </a>
     </div>
     <div class="topics">
       <span class="chip"><b>Interior:</b> Plumbing</span>
@@ -224,8 +225,8 @@
         <span class="eyebrow">Our Flagship Free Toolkit</span>
         <h2>The HomeGuard™ System</h2>
         <p class="body">A straightforward monthly action plan to protect your home and your money — built from real field experience across Maryland and DC, covering everything from the roof down to the basement.</p>
-        <p class="body">Paired with <b>Contractor Clarity™</b>, our framework for choosing a reputable local pro with confidence — so you know exactly what to ask before you sign.</p>
-        <a href="#start" class="btn btn-gold" style="margin-top:8px">Get the Free Guide</a>
+        <p class="body">Paired with <a href="/contractor-clarity"><b>Contractor Clarity™</b></a>, our framework for choosing a reputable local pro with confidence — so you know exactly what to ask before you sign.</p>
+        <a href="/start" class="btn btn-gold" style="margin-top:8px">Get the Free Guide</a>
       </div>
       <div class="hg-tiles">
         <div class="tile"><div class="label">HomeGuard™ Intel</div><p>Monthly inspection maps and seasonal prevention checklists for inside and out.</p></div>
@@ -245,8 +246,8 @@
       <p>Sign up to receive the HomeGuard™ starter guide plus our best checklists and insights — straight to your inbox. No pressure, no pitch, just the knowledge to take care of your home and your money.</p>
     </div>
     <div class="box">
-      <a href="#" class="btn btn-gold" style="margin-bottom:12px;display:block">Send Me The Free Guide →</a>
-      <a href="https://instagram.com/ab.home.solutions" class="btn btn-ghost" style="display:block">Follow @ab.home.solutions</a>
+      <a href="/start" class="btn btn-gold" style="margin-bottom:12px;display:block">Send Me The Free Guide →</a>
+      <a href="https://instagram.com/ab.home.solutions" target="_blank" rel="noopener" class="btn btn-ghost" style="display:block">Follow @ab.home.solutions</a>
     </div>
   </div>
 </section>
@@ -259,9 +260,9 @@
       <p>Field-tested guides for Maryland and DC homeowners — covering maintenance inside and out, plus the scam tactics to watch for before you sign or pay.</p>
     </div>
     <div class="posts">
-      <article class="post"><div class="ph"></div><div class="pad"><span class="cat">Anti-Scam</span><h3>7 Red Flags a Contractor Is About to Scam You</h3><div class="meta"><span>Maryland · DC</span><span class="read">6 min read →</span></div></div></article>
-      <article class="post"><div class="ph"></div><div class="pad"><span class="cat">Maintenance</span><h3>The Seasonal Home Checklist Every DMV Owner Needs</h3><div class="meta"><span>Interior + Exterior</span><span class="read">5 min read →</span></div></div></article>
-      <article class="post"><div class="ph"></div><div class="pad"><span class="cat">Hiring &amp; Vetting</span><h3>How to Vet a Contractor Before You Pay a Dime</h3><div class="meta"><span>Maryland · DC</span><span class="read">4 min read →</span></div></div></article>
+      <a class="post" href="/blog"><div class="ph"></div><div class="pad"><span class="cat">Anti-Scam</span><h3>7 Red Flags a Contractor Is About to Scam You</h3><div class="meta"><span>Maryland · DC</span><span class="read">6 min read →</span></div></div></a>
+      <a class="post" href="/blog"><div class="ph"></div><div class="pad"><span class="cat">Maintenance</span><h3>The Seasonal Home Checklist Every DMV Owner Needs</h3><div class="meta"><span>Interior + Exterior</span><span class="read">5 min read →</span></div></div></a>
+      <a class="post" href="/blog"><div class="ph"></div><div class="pad"><span class="cat">Hiring &amp; Vetting</span><h3>How to Vet a Contractor Before You Pay a Dime</h3><div class="meta"><span>Maryland · DC</span><span class="read">4 min read →</span></div></div></a>
     </div>
   </div>
 </section>
@@ -286,22 +287,22 @@
         <p class="fnote">Free, honest home-maintenance resources for Maryland and DC homeowners — built to help you maintain your home inside and out, and avoid predatory contractors.</p>
       </div>
       <div><h4>Resources</h4><ul>
-        <li><a href="#homeguard">HomeGuard™ System</a></li>
-        <li><a href="#homeguard">Contractor Clarity™</a></li>
-        <li><a href="#resources">Guides &amp; Checklists</a></li>
-        <li><a href="#blog">Knowledge Base</a></li>
+        <li><a href="/homeguard">HomeGuard™ System</a></li>
+        <li><a href="/contractor-clarity">Contractor Clarity™</a></li>
+        <li><a href="/resources">Guides &amp; Checklists</a></li>
+        <li><a href="/blog">Knowledge Base</a></li>
       </ul></div>
       <div><h4>Topics</h4><ul>
-        <li><a href="#blog">Anti-Scam</a></li>
-        <li><a href="#blog">Hiring &amp; Vetting</a></li>
-        <li><a href="#blog">Maintenance</a></li>
-        <li><a href="#blog">Insurance</a></li>
+        <li><a href="/blog#anti-scam">Anti-Scam</a></li>
+        <li><a href="/blog#hiring">Hiring &amp; Vetting</a></li>
+        <li><a href="/blog#maintenance">Maintenance</a></li>
+        <li><a href="/blog#insurance">Insurance</a></li>
       </ul></div>
       <div><h4>Connect</h4><ul>
-        <li><a href="https://instagram.com/ab.home.solutions">Instagram</a></li>
-        <li><a href="#start">Get the Free Guide</a></li>
-        <li><a href="#about">Our Mission</a></li>
-        <li><a href="#start">Newsletter</a></li>
+        <li><a href="https://instagram.com/ab.home.solutions" target="_blank" rel="noopener">Instagram</a></li>
+        <li><a href="/start">Get the Free Guide</a></li>
+        <li><a href="/about">Our Mission</a></li>
+        <li><a href="/start">Newsletter</a></li>
       </ul></div>
     </div>
     <div class="fbar">

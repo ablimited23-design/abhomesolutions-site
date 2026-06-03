@@ -1,0 +1,480 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Contractor Clarity™ — Vet a Contractor Before You Sign | DMV</title>
+<meta name="description" content="A free step-by-step framework for vetting and choosing reputable contractors in Maryland & DC — license checks, the three-bid rule, deposit caps, and red flags.">
+
+<meta property="og:title" content="Contractor Clarity™ — Vet a Contractor Before You Sign | DMV">
+<meta property="og:description" content="A free step-by-step framework for vetting and choosing reputable contractors in Maryland & DC — license checks, the three-bid rule, deposit caps, and red flags.">
+<meta property="og:type" content="website">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Crect width='24' height='24' rx='5' fill='%230a1628'/%3E%3Cpath d='M12 4l6 2.6v4.3c0 3.9-2.6 6.5-6 7.8-3.4-1.3-6-3.9-6-7.8V6.6L12 4z' fill='none' stroke='%23e0a52e' stroke-width='1.6'/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wght@600;700;800;900&family=Libre+Franklin:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap" rel="stylesheet">
+<style>
+:root{
+  --navy:#0a1628; --navy-800:#0d1d34; --navy-700:#11243f; --navy-600:#1a3457;
+  --gold:#e0a52e; --gold-bright:#f2c14e; --gold-deep:#c0871d;
+  --cream:#f6f1e7; --cream-soft:#fbf7ef; --ink:#0a1628; --ink-soft:#41506a;
+  --mist:rgba(246,241,231,.74); --mist-dim:rgba(246,241,231,.55);
+  --line:rgba(224,165,46,.28); --line-soft:rgba(246,241,231,.12);
+  --font-display:'Archivo',-apple-system,system-ui,sans-serif;
+  --font-body:'Libre Franklin',-apple-system,system-ui,sans-serif;
+  --maxw:1180px; --r:14px; --shadow:0 24px 60px -22px rgba(0,0,0,.55);
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+body{font-family:var(--font-body);background:var(--navy);color:var(--cream);
+  line-height:1.62;font-size:17px;overflow-x:hidden;font-weight:400}
+img{max-width:100%;display:block}
+a{color:inherit;text-decoration:none}
+::selection{background:var(--gold);color:var(--navy)}
+
+/* grain / texture overlay */
+.grain{position:fixed;inset:0;z-index:1;pointer-events:none;opacity:.05;
+  background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='160' height='160'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.85' numOctaves='2'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E")}
+
+.wrap{max-width:var(--maxw);margin:0 auto;padding:0 28px;position:relative;z-index:2}
+
+/* ---- type ---- */
+.eyebrow{font-family:var(--font-display);font-weight:700;text-transform:uppercase;
+  letter-spacing:.22em;font-size:.72rem;color:var(--gold);display:inline-flex;
+  align-items:center;gap:.6em}
+.eyebrow::before{content:"";width:26px;height:2px;background:var(--gold)}
+h1,h2,h3,h4{font-family:var(--font-display);font-weight:800;line-height:1.04;
+  letter-spacing:-.012em}
+h1{font-size:clamp(2.5rem,6vw,4.4rem);text-transform:uppercase;letter-spacing:-.018em}
+h2{font-size:clamp(1.9rem,3.6vw,2.9rem);text-transform:uppercase}
+h3{font-size:1.22rem;letter-spacing:.005em}
+.lead{font-size:clamp(1.05rem,1.6vw,1.28rem);color:var(--mist);max-width:60ch}
+em,.italic{font-style:italic;color:var(--gold-bright);font-weight:inherit}
+.section--light em{color:var(--gold-deep)}
+
+/* ---- header ---- */
+header.site{position:sticky;top:0;z-index:50;backdrop-filter:blur(14px);
+  background:rgba(10,22,40,.82);border-bottom:1px solid var(--line-soft)}
+.nav{display:flex;align-items:center;gap:30px;height:74px}
+.brand{display:flex;align-items:center;gap:11px;font-family:var(--font-display);
+  font-weight:800;text-transform:uppercase;letter-spacing:.04em;font-size:.95rem;
+  margin-right:auto}
+.brand .badge{width:34px;height:34px;display:grid;place-items:center;
+  background:var(--gold);border-radius:9px;color:var(--navy);flex:none}
+.brand .badge svg{width:20px;height:20px}
+.brand small{display:block;font-size:.6rem;letter-spacing:.18em;color:var(--gold);
+  font-weight:700;margin-top:1px}
+.navlinks{display:flex;gap:26px;align-items:center}
+.navlinks a{font-size:.86rem;font-weight:600;color:var(--mist);letter-spacing:.01em;
+  position:relative;padding:6px 0;transition:color .2s}
+.navlinks a:hover{color:var(--cream)}
+.navlinks a.active{color:var(--gold)}
+.navlinks a::after{content:"";position:absolute;left:0;bottom:0;height:2px;width:0;
+  background:var(--gold);transition:width .25s}
+.navlinks a:hover::after,.navlinks a.active::after{width:100%}
+.btn{display:inline-flex;align-items:center;gap:.5em;font-family:var(--font-display);
+  font-weight:700;text-transform:uppercase;letter-spacing:.04em;font-size:.82rem;
+  padding:13px 22px;border-radius:10px;cursor:pointer;border:1px solid transparent;
+  transition:transform .18s,box-shadow .2s,background .2s,color .2s;white-space:nowrap}
+.btn-gold{background:var(--gold);color:var(--navy);box-shadow:0 10px 26px -10px rgba(224,165,46,.6)}
+.btn-gold:hover{background:var(--gold-bright);transform:translateY(-2px);
+  box-shadow:0 16px 34px -10px rgba(224,165,46,.7)}
+.btn-ghost{border-color:var(--line);color:var(--cream);background:transparent}
+.btn-ghost:hover{border-color:var(--gold);color:var(--gold);transform:translateY(-2px)}
+.btn-lg{padding:16px 30px;font-size:.9rem}
+.menu-btn{display:none;background:none;border:1px solid var(--line-soft);border-radius:9px;
+  width:42px;height:42px;color:var(--cream);cursor:pointer}
+.menu-btn svg{width:22px;height:22px;margin:auto}
+
+/* ---- sections ---- */
+section{position:relative;z-index:2}
+.section{padding:clamp(64px,9vw,118px) 0}
+.section--light{background:var(--cream);color:var(--ink)}
+.section--light .lead{color:var(--ink-soft)}
+.section--cream-soft{background:var(--cream-soft);color:var(--ink)}
+.section--cream-soft .lead{color:var(--ink-soft)}
+.section--navy-800{background:var(--navy-800)}
+
+/* hero */
+.hero{padding:clamp(70px,11vw,140px) 0 clamp(56px,8vw,96px);
+  background:radial-gradient(120% 120% at 80% -10%,rgba(224,165,46,.16),transparent 55%),
+  linear-gradient(180deg,var(--navy) 0%,var(--navy-800) 100%)}
+.hero .tag{display:inline-flex;gap:.6em;align-items:center;font-size:.74rem;
+  font-weight:600;letter-spacing:.16em;text-transform:uppercase;color:var(--gold);
+  border:1px solid var(--line);border-radius:100px;padding:7px 16px;margin-bottom:26px}
+.hero h1{max-width:16ch;margin-bottom:24px}
+.hero .lead{margin-bottom:34px}
+.cta-row{display:flex;gap:14px;flex-wrap:wrap}
+
+/* reveal animation */
+.reveal{opacity:0;transform:translateY(22px);animation:rise .7s cubic-bezier(.2,.7,.2,1) forwards}
+@keyframes rise{to{opacity:1;transform:none}}
+.d1{animation-delay:.05s}.d2{animation-delay:.13s}.d3{animation-delay:.21s}
+.d4{animation-delay:.29s}.d5{animation-delay:.37s}.d6{animation-delay:.45s}
+
+/* section heading block */
+.sec-head{max-width:64ch;margin-bottom:46px}
+.sec-head h2{margin:14px 0 16px}
+
+/* grids */
+.grid{display:grid;gap:20px}
+.g2{grid-template-columns:repeat(2,1fr)}
+.g3{grid-template-columns:repeat(3,1fr)}
+.g4{grid-template-columns:repeat(4,1fr)}
+
+/* cards */
+.card{background:var(--navy-700);border:1px solid var(--line-soft);border-radius:var(--r);
+  padding:30px 28px;transition:transform .22s,border-color .22s,box-shadow .22s;position:relative}
+.card:hover{transform:translateY(-5px);border-color:var(--line);box-shadow:var(--shadow)}
+.section--light .card,.section--cream-soft .card{background:#fff;
+  border:1px solid rgba(10,22,40,.08);color:var(--ink)}
+.section--light .card:hover,.section--cream-soft .card:hover{border-color:var(--gold)}
+.card h3{margin-bottom:10px}
+.card p{font-size:.96rem;color:var(--mist)}
+.section--light .card p,.section--cream-soft .card p{color:var(--ink-soft)}
+.ico{width:48px;height:48px;border-radius:11px;display:grid;place-items:center;
+  background:rgba(224,165,46,.13);color:var(--gold);margin-bottom:18px}
+.section--light .ico,.section--cream-soft .ico{background:rgba(224,165,46,.16);color:var(--gold-deep)}
+.ico svg{width:25px;height:25px}
+
+/* numbered steps */
+.steps{display:grid;gap:18px;counter-reset:s}
+.step{display:grid;grid-template-columns:auto 1fr;gap:22px;align-items:start;
+  padding:26px 28px;background:var(--navy-700);border:1px solid var(--line-soft);
+  border-radius:var(--r)}
+.section--light .step{background:#fff;border-color:rgba(10,22,40,.08)}
+.step .num{font-family:var(--font-display);font-weight:800;font-size:1.5rem;
+  width:54px;height:54px;border-radius:12px;display:grid;place-items:center;
+  background:var(--gold);color:var(--navy);flex:none}
+.step h3{margin-bottom:6px}
+.step p{color:var(--mist);font-size:.97rem}
+.section--light .step p{color:var(--ink-soft)}
+
+/* checklist */
+.checklist{list-style:none;display:grid;gap:14px}
+.checklist li{display:grid;grid-template-columns:auto 1fr;gap:14px;align-items:start;
+  font-size:1rem}
+.checklist .ck{flex:none;width:26px;height:26px;border-radius:7px;background:rgba(224,165,46,.15);
+  color:var(--gold);display:grid;place-items:center;margin-top:2px}
+.section--light .checklist .ck{background:rgba(224,165,46,.18);color:var(--gold-deep)}
+.checklist .ck svg{width:15px;height:15px}
+.checklist strong{font-weight:700}
+
+/* flags (red) */
+.flags{display:grid;gap:13px}
+.flag{display:grid;grid-template-columns:auto 1fr;gap:14px;align-items:start;
+  padding:18px 20px;border-radius:12px;background:rgba(224,82,72,.07);
+  border:1px solid rgba(224,82,72,.22)}
+.flag .x{flex:none;width:26px;height:26px;border-radius:7px;background:rgba(224,82,72,.18);
+  color:#ff8a82;display:grid;place-items:center;margin-top:1px}
+.section--light .flag .x{color:#c0392b}
+.flag .x svg{width:15px;height:15px}
+.flag p{font-size:.97rem;color:var(--mist)}
+.section--light .flag p{color:var(--ink-soft)}
+
+/* pill tags / chips */
+.chips{display:flex;flex-wrap:wrap;gap:10px;margin-bottom:34px}
+.chip{font-family:var(--font-display);font-weight:600;text-transform:uppercase;
+  letter-spacing:.06em;font-size:.74rem;padding:9px 17px;border-radius:100px;
+  border:1px solid var(--line);color:var(--mist);cursor:pointer;background:transparent;
+  transition:all .2s}
+.chip:hover{color:var(--gold);border-color:var(--gold)}
+.chip.active{background:var(--gold);color:var(--navy);border-color:var(--gold)}
+
+/* taxonomy tag */
+.tax{display:inline-block;font-family:var(--font-display);font-weight:700;font-size:.66rem;
+  letter-spacing:.14em;text-transform:uppercase;color:var(--gold);margin-bottom:12px}
+
+/* blog cards */
+.post{display:flex;flex-direction:column;height:100%}
+.post .meta{margin-top:auto;padding-top:16px;font-size:.78rem;color:var(--mist-dim);
+  display:flex;gap:8px;align-items:center;letter-spacing:.02em}
+.post .meta .dot{width:3px;height:3px;border-radius:50%;background:currentColor}
+.post .arrow{color:var(--gold);font-weight:700}
+.post.feature{grid-column:span 2;background:linear-gradient(135deg,var(--navy-700),var(--navy-600));
+  border-color:var(--line)}
+.post.feature h3{font-size:1.7rem;text-transform:none;letter-spacing:-.01em}
+
+/* resource library row */
+.res{display:grid;grid-template-columns:auto 1fr auto;gap:20px;align-items:center;
+  padding:22px 24px;background:var(--navy-700);border:1px solid var(--line-soft);
+  border-radius:12px;transition:border-color .2s,transform .2s}
+.res:hover{border-color:var(--line);transform:translateX(4px)}
+.section--light .res{background:#fff;border-color:rgba(10,22,40,.08)}
+.res h4{font-size:1.02rem;font-family:var(--font-display);font-weight:700;
+  text-transform:none;letter-spacing:0;margin-bottom:3px}
+.res p{font-size:.9rem;color:var(--mist)}
+.section--light .res p{color:var(--ink-soft)}
+.res .get{font-family:var(--font-display);font-weight:700;font-size:.78rem;
+  text-transform:uppercase;letter-spacing:.05em;color:var(--gold);white-space:nowrap}
+.res .soon{color:var(--mist-dim);border:1px solid var(--line-soft);padding:5px 12px;
+  border-radius:100px;font-size:.68rem;letter-spacing:.08em}
+.res-group h3{margin:40px 0 18px;font-size:.9rem;letter-spacing:.18em;text-transform:uppercase;
+  color:var(--gold)}
+.res-group:first-of-type h3{margin-top:0}
+
+/* CTA band */
+.band{background:linear-gradient(120deg,var(--gold) 0%,var(--gold-bright) 100%);
+  color:var(--navy);border-radius:22px;padding:clamp(40px,6vw,68px);text-align:center;
+  position:relative;overflow:hidden}
+.band h2{color:var(--navy)}
+.band .lead{color:rgba(10,22,40,.82);margin:16px auto 30px;max-width:54ch}
+.band .btn-navy{background:var(--navy);color:var(--cream)}
+.band .btn-navy:hover{background:var(--navy-800);transform:translateY(-2px)}
+.band .btn-outline{border-color:rgba(10,22,40,.4);color:var(--navy)}
+.band .btn-outline:hover{border-color:var(--navy);background:rgba(10,22,40,.06)}
+
+/* split (about / start) */
+.split{display:grid;grid-template-columns:1.05fr .95fr;gap:54px;align-items:center}
+.callout{background:var(--navy-700);border:1px solid var(--line);border-radius:var(--r);
+  padding:30px 30px;border-left:4px solid var(--gold)}
+.callout h3{color:var(--gold);margin-bottom:8px}
+.section--light .callout{background:#fff}
+
+/* form */
+.formcard{background:#fff;color:var(--ink);border-radius:18px;padding:38px 36px;
+  box-shadow:var(--shadow);border:1px solid rgba(10,22,40,.06)}
+.formcard h3{text-transform:none;letter-spacing:0;font-size:1.4rem;margin-bottom:8px}
+.formcard p.sub{color:var(--ink-soft);font-size:.95rem;margin-bottom:24px}
+.field{margin-bottom:18px}
+.field label{display:block;font-family:var(--font-display);font-weight:700;font-size:.74rem;
+  text-transform:uppercase;letter-spacing:.08em;color:var(--ink);margin-bottom:7px}
+.field input{width:100%;padding:14px 16px;border:1.5px solid rgba(10,22,40,.16);
+  border-radius:10px;font-family:var(--font-body);font-size:1rem;color:var(--ink);
+  background:var(--cream-soft);transition:border-color .2s,background .2s}
+.field input:focus{outline:none;border-color:var(--gold);background:#fff}
+.consent{display:grid;grid-template-columns:auto 1fr;gap:11px;align-items:start;
+  font-size:.82rem;color:var(--ink-soft);margin-bottom:22px;line-height:1.5}
+.consent input{margin-top:3px;width:17px;height:17px;accent-color:var(--gold);flex:none}
+.formcard .btn{width:100%;justify-content:center}
+.fineprint{font-size:.76rem;color:var(--ink-soft);margin-top:14px;text-align:center}
+.note{font-size:.78rem;background:rgba(224,165,46,.12);border:1px dashed var(--gold-deep);
+  border-radius:10px;padding:12px 14px;margin-top:18px;color:var(--ink-soft)}
+
+/* benefit list (start/homeguard) */
+.benefits{list-style:none;display:grid;gap:18px;margin-top:8px}
+.benefits li{display:grid;grid-template-columns:auto 1fr;gap:16px;align-items:start}
+.benefits .bi{flex:none;width:40px;height:40px;border-radius:10px;background:rgba(224,165,46,.14);
+  color:var(--gold);display:grid;place-items:center}
+.benefits .bi svg{width:21px;height:21px}
+.benefits h4{font-family:var(--font-display);font-weight:700;font-size:1rem;
+  text-transform:none;letter-spacing:0;margin-bottom:2px}
+.benefits p{font-size:.92rem;color:var(--mist)}
+
+/* stat / value row */
+.values{display:grid;grid-template-columns:repeat(4,1fr);gap:18px;margin-top:10px}
+.value{text-align:center;padding:26px 18px;border:1px solid var(--line-soft);border-radius:12px}
+.value .vi{width:44px;height:44px;margin:0 auto 14px;border-radius:11px;
+  background:rgba(224,165,46,.13);color:var(--gold);display:grid;place-items:center}
+.value .vi svg{width:23px;height:23px}
+.value h4{font-family:var(--font-display);font-weight:700;font-size:1rem;text-transform:none;
+  letter-spacing:0;margin-bottom:6px}
+.value p{font-size:.88rem;color:var(--mist)}
+
+/* is / isn't */
+.compare{display:grid;grid-template-columns:1fr 1fr;gap:20px}
+.compare .col{padding:28px;border-radius:var(--r)}
+.compare .yes{background:rgba(224,165,46,.1);border:1px solid var(--line)}
+.compare .no{background:var(--navy-700);border:1px solid var(--line-soft)}
+.compare h4{font-family:var(--font-display);text-transform:uppercase;letter-spacing:.06em;
+  font-size:.9rem;margin-bottom:16px;display:flex;align-items:center;gap:9px}
+.compare .yes h4{color:var(--gold)}
+.compare ul{list-style:none;display:grid;gap:11px}
+.compare li{font-size:.95rem;color:var(--mist);padding-left:20px;position:relative}
+.compare li::before{content:"";position:absolute;left:0;top:9px;width:7px;height:7px;
+  border-radius:50%;background:var(--gold)}
+.compare .no li::before{background:var(--mist-dim)}
+
+/* thank you */
+.ty{text-align:center;max-width:620px;margin:0 auto}
+.ty .check{width:88px;height:88px;border-radius:50%;background:var(--gold);color:var(--navy);
+  display:grid;place-items:center;margin:0 auto 30px;box-shadow:0 16px 40px -12px rgba(224,165,46,.6)}
+.ty .check svg{width:46px;height:46px}
+.ty .next{display:grid;gap:12px;margin-top:40px;text-align:left}
+
+/* footer */
+footer.site{background:var(--navy-800);border-top:1px solid var(--line-soft);
+  padding:64px 0 30px}
+.foot-grid{display:grid;grid-template-columns:1.6fr 1fr 1fr 1fr;gap:40px;margin-bottom:46px}
+.foot-brand .brand{margin-bottom:18px}
+.foot-brand p{font-size:.92rem;color:var(--mist-dim);max-width:34ch}
+footer h5{font-family:var(--font-display);font-weight:700;font-size:.74rem;
+  text-transform:uppercase;letter-spacing:.14em;color:var(--gold);margin-bottom:18px}
+footer ul{list-style:none;display:grid;gap:11px}
+footer ul a{font-size:.9rem;color:var(--mist);transition:color .2s}
+footer ul a:hover{color:var(--gold)}
+.foot-bottom{border-top:1px solid var(--line-soft);padding-top:24px;display:flex;
+  justify-content:space-between;gap:16px;flex-wrap:wrap;font-size:.8rem;color:var(--mist-dim)}
+
+/* responsive */
+@media(max-width:900px){
+  .navlinks{position:fixed;inset:74px 0 auto 0;flex-direction:column;align-items:flex-start;
+    gap:0;background:var(--navy-800);border-bottom:1px solid var(--line-soft);padding:8px 28px 22px;
+    transform:translateY(-130%);transition:transform .3s;box-shadow:var(--shadow)}
+  .navlinks.open{transform:none}
+  .navlinks a{width:100%;padding:14px 0;border-bottom:1px solid var(--line-soft)}
+  .navlinks .btn{margin-top:14px;width:100%;justify-content:center}
+  .menu-btn{display:grid}
+  .g4{grid-template-columns:repeat(2,1fr)}
+  .g3{grid-template-columns:1fr}
+  .values{grid-template-columns:repeat(2,1fr)}
+  .split{grid-template-columns:1fr;gap:36px}
+  .post.feature{grid-column:span 1}
+}
+@media(max-width:620px){
+  .wrap{padding:0 20px}
+  .g2,.compare{grid-template-columns:1fr}
+  .res{grid-template-columns:1fr;text-align:left;gap:10px}
+  .foot-grid{grid-template-columns:1fr 1fr;gap:30px}
+  .foot-brand{grid-column:span 2}
+  body{font-size:16px}
+}
+</style>
+</head>
+<body>
+<div class="grain"></div>
+
+<header class="site">
+  <div class="wrap nav">
+    <a class="brand" href="/">
+      <span class="badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3l7 3v5c0 4.5-3 7.5-7 9-4-1.5-7-4.5-7-9V6l7-3z"/></svg></span>
+      AB Home Solutions<small>HOMEGUARD™</small>
+    </a>
+    <nav class="navlinks" id="nav">
+      <a href="/resources" class="">Resources</a><a href="/homeguard" class="">HomeGuard™</a><a href="/blog" class="">Blog</a><a href="/about" class="">About</a>
+      <a href="/start" class="btn btn-gold">Get the Free Guide →</a>
+    </nav>
+    <button class="menu-btn" id="menuBtn" aria-label="Menu" aria-expanded="false"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4 7h16M4 12h16M4 17h16"/></svg></button>
+  </div>
+</header>
+
+<section class="hero">
+  <div class="wrap">
+    <span class="tag reveal"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 4v16M7 20h10M5 8l-2 5h6l-2-5zM19 8l-2 5h6l-2-5zM5 8h14M12 4l-7 4M12 4l7 4"/></svg> Before You Sign Anything</span>
+    <h1 class="reveal d1">Contractor Clarity™</h1>
+    <p class="lead reveal d2">A step-by-step framework for vetting and choosing reputable local pros — so you know exactly what to ask, what to check, and what to walk away from before any money changes hands.</p>
+    <div class="cta-row reveal d3">
+      <a href="/start" class="btn btn-lg btn-gold">Get the Free Guide →</a>
+      <a href="/homeguard" class="btn btn-lg btn-ghost">See HomeGuard™</a>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <span class="eyebrow">The Framework</span>
+      <h2>Five checks that stop a scam cold</h2>
+      <p class="lead">Run these in order, every time. They cost you nothing and protect you from the most common — and most expensive — contractor traps.</p>
+    </div>
+    <div class="steps">
+      <div class="step reveal"><div class="num">1</div><div><h3>Verify the license</h3><p>In Maryland, most home-improvement work requires an MHIC license. Look it up, confirm it's active, and make sure the name matches who's standing in your driveway.</p></div></div>
+      <div class="step reveal"><div class="num">2</div><div><h3>Get three written bids</h3><p>The three-bid rule isn't about the cheapest price — it's about understanding the real range. A bid far below the others is usually hiding something.</p></div></div>
+      <div class="step reveal"><div class="num">3</div><div><h3>Cap the deposit</h3><p>Never hand over a large sum upfront. Know your state's deposit limits, tie payments to completed milestones, and keep final payment until the work passes inspection.</p></div></div>
+      <div class="step reveal"><div class="num">4</div><div><h3>Confirm insurance &amp; the contract</h3><p>Ask for proof of liability and workers' comp. Get everything — scope, materials, timeline, and warranty — in writing before you agree.</p></div></div>
+      <div class="step reveal"><div class="num">5</div><div><h3>Watch for the red flags</h3><p>Pressure, "today only" pricing, cash-only deals, and no paper trail are the warning signs that come up again and again.</p></div></div>
+    </div>
+  </div>
+</section>
+
+<section class="section section--light">
+  <div class="wrap">
+    <div class="split">
+      <div class="reveal">
+        <span class="eyebrow">Red Flags</span>
+        <h2 style="margin:14px 0 22px">If you see these, slow down</h2>
+        <p class="lead" style="margin-bottom:8px">Reputable pros expect you to ask questions. The ones who don't want you to think it through are the ones to avoid.</p>
+      </div>
+      <div class="flags reveal">
+        <div class="flag"><span class="x"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M6 6l12 12M18 6L6 18"/></svg></span><p><strong>Pressure to decide today.</strong> Real quotes don't expire in an hour.</p></div>
+        <div class="flag"><span class="x"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M6 6l12 12M18 6L6 18"/></svg></span><p><strong>Large cash deposit upfront.</strong> Especially with no detailed contract.</p></div>
+        <div class="flag"><span class="x"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M6 6l12 12M18 6L6 18"/></svg></span><p><strong>No license or proof of insurance.</strong> Or excuses about why they "don't need one."</p></div>
+        <div class="flag"><span class="x"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M6 6l12 12M18 6L6 18"/></svg></span><p><strong>Door-to-door "I noticed your roof" pitches.</strong> A classic storm-chaser opener.</p></div>
+        <div class="flag"><span class="x"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M6 6l12 12M18 6L6 18"/></svg></span><p><strong>No written estimate.</strong> Verbal-only deals leave you with no recourse.</p></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <span class="eyebrow">Before You Sign</span>
+      <h2>The questions to ask every time</h2>
+    </div>
+    <ul class="checklist reveal" style="max-width:760px">
+      <li><span class="ck"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12l4.5 4.5L19 7"/></svg></span><span>Can you show me your current MHIC license number?</span></li>
+      <li><span class="ck"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12l4.5 4.5L19 7"/></svg></span><span>Are you carrying liability insurance and workers' comp right now?</span></li>
+      <li><span class="ck"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12l4.5 4.5L19 7"/></svg></span><span>Can I get this estimate in writing, with scope and materials listed?</span></li>
+      <li><span class="ck"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12l4.5 4.5L19 7"/></svg></span><span>What does the payment schedule look like, tied to which milestones?</span></li>
+      <li><span class="ck"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12l4.5 4.5L19 7"/></svg></span><span>What warranty comes with the work, and is it in the contract?</span></li>
+      <li><span class="ck"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12l4.5 4.5L19 7"/></svg></span><span>Can you give me a few recent local references I can call?</span></li>
+    </ul>
+    <p class="note" style="max-width:760px">This is general homeowner guidance, not legal advice. Licensing rules and deposit limits vary — always confirm the current requirements for your county and project type.</p>
+  </div>
+</section>
+
+<section class="section section--cream-soft">
+  <div class="wrap">
+    <div class="band reveal">
+      <h2>Get the full Contractor Clarity™ checklist</h2>
+      <p class="lead">The free guide includes the printable vetting checklist, the questions to ask, and the red-flag reference card.</p>
+      <div class="cta-row" style="justify-content:center">
+        <a href="/start" class="btn btn-lg btn-navy">Get the Free Guide →</a><a href="/blog#anti-scam" class="btn btn-lg btn-outline">Read the Anti-Scam guides</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<footer class="site">
+  <div class="wrap">
+    <div class="foot-grid">
+      <div class="foot-brand">
+        <a class="brand" href="/"><span class="badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3l7 3v5c0 4.5-3 7.5-7 9-4-1.5-7-4.5-7-9V6l7-3z"/></svg></span>AB Home Solutions<small>HOMEGUARD™</small></a>
+        <p>Free, honest home-maintenance resources for Maryland &amp; DC homeowners — built to help you care for your home inside and out, and steer clear of predatory contractors.</p>
+      </div>
+      <div>
+        <h5>Resources</h5>
+        <ul>
+          <li><a href="/homeguard">HomeGuard™ System</a></li>
+          <li><a href="/contractor-clarity">Contractor Clarity™</a></li>
+          <li><a href="/resources">Guides &amp; Checklists</a></li>
+          <li><a href="/blog">Knowledge Base</a></li>
+        </ul>
+      </div>
+      <div>
+        <h5>Topics</h5>
+        <ul>
+          <li><a href="/blog#anti-scam">Anti-Scam</a></li>
+          <li><a href="/blog#hiring">Hiring &amp; Vetting</a></li>
+          <li><a href="/blog#maintenance">Maintenance</a></li>
+          <li><a href="/blog#insurance">Insurance</a></li>
+        </ul>
+      </div>
+      <div>
+        <h5>Connect</h5>
+        <ul>
+          <li><a href="https://instagram.com/ab.home.solutions" target="_blank" rel="noopener">Instagram</a></li>
+          <li><a href="/start">Get the Free Guide</a></li>
+          <li><a href="/about">Our Mission</a></li>
+          <li><a href="/start">Newsletter</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="foot-bottom">
+      <span>© 2026 AB Home Solutions. All rights reserved. · abhomesolutions.pro</span>
+      <span>Homeowner Resources · Maryland &amp; DC · Education Over Profits</span>
+    </div>
+  </div>
+</footer>
+<script>
+(function(){
+  var b=document.getElementById('menuBtn'),n=document.getElementById('nav');
+  if(b){b.addEventListener('click',function(){var o=n.classList.toggle('open');
+    b.setAttribute('aria-expanded',o);});}
+})();
+</script>
+
+</body>
+</html>

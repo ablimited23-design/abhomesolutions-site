@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Reading a Roofing Quote Without Getting Fooled</title>
+<meta name="description" content="A HomeGuard&#8482; guide for Maryland & DC homeowners on how to read a roofing estimate line by line — what each item means, what's missing, and where the markups hide.">
+<meta property="og:title" content="Reading a Roofing Quote Without Getting Fooled">
+<meta property="og:description" content="A HomeGuard&#8482; guide for Maryland & DC homeowners on how to read a roofing estimate line by line — what each item means, what's missing, and where the markups hide.">
+<meta property="og:type" content="article">
+<link rel="canonical" href="https://www.abhomesolutions.pro/blog/reading-a-roofing-quote">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Crect width='24' height='24' rx='5' fill='%230a1628'/%3E%3Cpath d='M12 4l6 2.6v4.3c0 3.9-2.6 6.5-6 7.8-3.4-1.3-6-3.9-6-7.8V6.6L12 4z' fill='none' stroke='%23e0a52e' stroke-width='1.6'/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wght@600;700;800;900&family=Libre+Franklin:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap" rel="stylesheet">
+<style>
+:root{
+  --navy:#0a1628; --navy-800:#0d1d34; --navy-700:#11243f; --navy-600:#1a3457;
+  --gold:#e0a52e; --gold-bright:#f2c14e; --gold-deep:#c0871d;
+  --cream:#f6f1e7; --cream-soft:#fbf7ef; --ink:#0a1628; --ink-soft:#41506a;
+  --mist:rgba(246,241,231,.74); --mist-dim:rgba(246,241,231,.55);
+  --line:rgba(224,165,46,.28); --line-soft:rgba(246,241,231,.12);
+  --font-display:'Archivo',-apple-system,system-ui,sans-serif;
+  --font-body:'Libre Franklin',-apple-system,system-ui,sans-serif;
+  --maxw:1180px; --r:14px; --shadow:0 24px 60px -22px rgba(0,0,0,.55);
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+body{font-family:var(--font-body);background:var(--navy);color:var(--cream);line-height:1.62;font-size:17px;overflow-x:hidden;font-weight:400}
+img{max-width:100%;display:block}
+a{color:inherit;text-decoration:none}
+::selection{background:var(--gold);color:var(--navy)}
+.grain{position:fixed;inset:0;z-index:1;pointer-events:none;opacity:.05;background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='160' height='160'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.85' numOctaves='2'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E")}
+.wrap{max-width:var(--maxw);margin:0 auto;padding:0 28px;position:relative;z-index:2}
+.eyebrow{font-family:var(--font-display);font-weight:700;text-transform:uppercase;letter-spacing:.22em;font-size:.72rem;color:var(--gold);display:inline-flex;align-items:center;gap:.6em}
+.eyebrow::before{content:"";width:26px;height:2px;background:var(--gold)}
+h1,h2,h3,h4{font-family:var(--font-display);font-weight:800;line-height:1.04;letter-spacing:-.012em}
+h1{font-size:clamp(2.5rem,6vw,4.4rem);text-transform:uppercase;letter-spacing:-.018em}
+h2{font-size:clamp(1.9rem,3.6vw,2.9rem);text-transform:uppercase}
+h3{font-size:1.22rem;letter-spacing:.005em}
+.lead{font-size:clamp(1.05rem,1.6vw,1.28rem);color:var(--mist);max-width:60ch}
+em,.italic{font-style:italic;color:var(--gold-bright);font-weight:inherit}
+header.site{position:sticky;top:0;z-index:50;backdrop-filter:blur(14px);background:rgba(10,22,40,.82);border-bottom:1px solid var(--line-soft)}
+.nav{display:flex;align-items:center;gap:30px;height:74px}
+.brand{display:flex;align-items:center;gap:11px;font-family:var(--font-display);font-weight:800;text-transform:uppercase;letter-spacing:.04em;font-size:.95rem;margin-right:auto}
+.brand .badge{width:34px;height:34px;display:grid;place-items:center;background:var(--gold);border-radius:9px;color:var(--navy);flex:none}
+.brand .badge svg{width:20px;height:20px}
+.brand small{display:block;font-size:.6rem;letter-spacing:.18em;color:var(--gold);font-weight:700;margin-top:1px}
+.navlinks{display:flex;gap:26px;align-items:center}
+.navlinks a{font-size:.86rem;font-weight:600;color:var(--mist);letter-spacing:.01em;position:relative;padding:6px 0;transition:color .2s}
+.navlinks a:hover{color:var(--cream)}
+.navlinks a.active{color:var(--gold)}
+.navlinks a::after{content:"";position:absolute;left:0;bottom:0;height:2px;width:0;background:var(--gold);transition:width .25s}
+.navlinks a:hover::after,.navlinks a.active::after{width:100%}
+.btn{display:inline-flex;align-items:center;gap:.5em;font-family:var(--font-display);font-weight:700;text-transform:uppercase;letter-spacing:.04em;font-size:.82rem;padding:13px 22px;border-radius:10px;cursor:pointer;border:1px solid transparent;transition:transform .18s,box-shadow .2s,background .2s,color .2s;white-space:nowrap}
+.btn-gold{background:var(--gold);color:var(--navy);box-shadow:0 10px 26px -10px rgba(224,165,46,.6)}
+.btn-gold:hover{background:var(--gold-bright);transform:translateY(-2px);box-shadow:0 16px 34px -10px rgba(224,165,46,.7)}
+.btn-ghost{border-color:var(--line);color:var(--cream);background:transparent}
+.btn-ghost:hover{border-color:var(--gold);color:var(--gold);transform:translateY(-2px)}
+.btn-lg{padding:16px 30px;font-size:.9rem}
+.menu-btn{display:none;background:none;border:1px solid var(--line-soft);border-radius:9px;width:42px;height:42px;color:var(--cream);cursor:pointer}
+.menu-btn svg{width:22px;height:22px;margin:auto}
+section{position:relative;z-index:2}
+.section{padding:clamp(64px,9vw,118px) 0}
+.section--navy-800{background:var(--navy-800)}
+.hero{padding:clamp(70px,11vw,140px) 0 clamp(56px,8vw,96px);background:radial-gradient(120% 120% at 80% -10%,rgba(224,165,46,.16),transparent 55%),linear-gradient(180deg,var(--navy) 0%,var(--navy-800) 100%)}
+.tax{display:inline-block;font-family:var(--font-display);font-weight:700;font-size:.66rem;letter-spacing:.14em;text-transform:uppercase;color:var(--gold);margin-bottom:12px}
+.band{background:linear-gradient(120deg,var(--gold) 0%,var(--gold-bright) 100%);color:var(--navy);border-radius:22px;padding:clamp(40px,6vw,68px);text-align:center;position:relative;overflow:hidden}
+.band h2{color:var(--navy)}
+.band .lead{color:rgba(10,22,40,.82);margin:16px auto 30px;max-width:54ch}
+.band .btn-navy{background:var(--navy);color:var(--cream)}
+.band .btn-navy:hover{background:var(--navy-800);transform:translateY(-2px)}
+.band .btn-outline{border-color:rgba(10,22,40,.4);color:var(--navy)}
+.band .btn-outline:hover{border-color:var(--navy);background:rgba(10,22,40,.06)}
+.cta-row{display:flex;gap:14px;flex-wrap:wrap;justify-content:center}
+footer.site{background:var(--navy-800);border-top:1px solid var(--line-soft);padding:64px 0 30px}
+.foot-grid{display:grid;grid-template-columns:1.6fr 1fr 1fr 1fr;gap:40px;margin-bottom:46px}
+.foot-brand .brand{margin-bottom:18px}
+.foot-brand p{font-size:.92rem;color:var(--mist-dim);max-width:34ch}
+footer h5{font-family:var(--font-display);font-weight:700;font-size:.74rem;text-transform:uppercase;letter-spacing:.14em;color:var(--gold);margin-bottom:18px}
+footer ul{list-style:none;display:grid;gap:11px}
+footer ul a{font-size:.9rem;color:var(--mist);transition:color .2s}
+footer ul a:hover{color:var(--gold)}
+.foot-bottom{border-top:1px solid var(--line-soft);padding-top:24px;display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap;font-size:.8rem;color:var(--mist-dim)}
+@media(max-width:900px){
+  .navlinks{position:fixed;inset:74px 0 auto 0;flex-direction:column;align-items:flex-start;gap:0;background:var(--navy-800);border-bottom:1px solid var(--line-soft);padding:8px 28px 22px;transform:translateY(-130%);transition:transform .3s;box-shadow:var(--shadow)}
+  .navlinks.open{transform:none}
+  .navlinks a{width:100%;padding:14px 0;border-bottom:1px solid var(--line-soft)}
+  .navlinks .btn{margin-top:14px;width:100%;justify-content:center}
+  .menu-btn{display:grid}
+}
+@media(max-width:620px){.wrap{padding:0 20px}.foot-grid{grid-template-columns:1fr 1fr;gap:30px}.foot-brand{grid-column:span 2}body{font-size:16px}}
+</style>
+<style>
+.article{background:var(--cream);color:var(--ink)}
+.article .wrap{max-width:780px}
+.crumb{font-family:var(--font-display);font-weight:700;font-size:.72rem;letter-spacing:.12em;text-transform:uppercase;color:var(--gold)}
+.crumb a{color:var(--gold)} .crumb span{opacity:.5;margin:0 8px}
+.postmeta{color:var(--mist);font-size:.9rem;margin-top:6px}
+.article h2{color:var(--navy);font-size:clamp(1.4rem,2.4vw,1.7rem);margin:0 0 16px}
+.hook{font-size:clamp(1.12rem,1.8vw,1.3rem);line-height:1.6;color:var(--navy);font-weight:500;margin-bottom:30px}
+.prose p{font-size:1.06rem;line-height:1.72;color:#33414f;margin-bottom:1.05em}
+.prose strong{color:var(--navy);font-weight:700}
+.why{background:#fff;border-left:4px solid var(--gold);border-radius:10px;padding:22px 24px;margin:0 0 44px}
+.why .lbl{font-family:var(--font-display);font-weight:700;font-size:.7rem;letter-spacing:.14em;text-transform:uppercase;color:var(--gold-deep);margin-bottom:9px}
+.why p{margin-bottom:0;color:#33414f;font-size:1.04rem;line-height:1.7}
+.flag{margin:0 0 34px}
+.flag .fhead{display:grid;grid-template-columns:auto 1fr;gap:16px;align-items:center;margin-bottom:13px}
+.flag .fnum{font-family:var(--font-display);font-weight:800;font-size:1.18rem;width:46px;height:46px;border-radius:12px;background:var(--navy);color:var(--gold-bright);display:grid;place-items:center;flex:none}
+.flag h3{color:var(--navy);font-size:1.24rem;line-height:1.15}
+.dothis{background:var(--navy);color:var(--cream);border-radius:11px;padding:15px 18px;margin-top:14px;font-size:.99rem;line-height:1.55}
+.dothis b{font-family:var(--font-display);color:var(--gold-bright);text-transform:uppercase;letter-spacing:.1em;font-size:.68rem;display:block;margin-bottom:5px}
+.guard{background:var(--navy);color:var(--cream);border-radius:16px;padding:clamp(26px,4vw,34px);margin:44px 0;box-shadow:var(--shadow)}
+.guard h3{color:var(--gold-bright);display:flex;align-items:center;gap:11px;margin-bottom:22px;font-size:1.16rem;text-transform:none;letter-spacing:0}
+.guard h3 svg{width:24px;height:24px;flex:none}
+.guard ul{list-style:none;display:grid;gap:13px}
+.guard li{display:grid;grid-template-columns:auto 1fr;gap:13px;align-items:start;font-size:1.0rem;color:var(--cream)}
+.guard .ck{flex:none;width:24px;height:24px;border-radius:7px;background:rgba(242,193,78,.18);color:var(--gold-bright);display:grid;place-items:center;margin-top:2px}
+.guard .ck svg{width:14px;height:14px}
+.guard li strong{color:var(--gold-bright);font-weight:700}
+.mistakes{list-style:none;display:grid;gap:11px;margin:6px 0 0}
+.mistakes li{padding-left:28px;position:relative;color:#33414f;font-size:1.02rem;line-height:1.55}
+.mistakes li::before{content:"";position:absolute;left:0;top:7px;width:15px;height:15px;border-radius:4px;background:rgba(192,57,43,.14)}
+.mistakes li::after{content:"\2715";position:absolute;left:3px;top:1px;color:#c0392b;font-size:.72rem;font-weight:700}
+.bottomline{background:#fff;border:1px solid rgba(10,22,40,.08);border-top:4px solid var(--gold);border-radius:12px;padding:26px 28px;margin:18px 0 0}
+.bottomline p{margin-bottom:0;font-size:1.06rem;line-height:1.72;color:#33414f}
+.bottomline strong{color:var(--navy)}
+.author{display:grid;grid-template-columns:auto 1fr;gap:18px;align-items:start;border-top:1px solid rgba(10,22,40,.12);margin-top:46px;padding-top:30px}
+.author .ash{width:54px;height:54px;border-radius:13px;background:var(--navy);color:var(--gold-bright);display:grid;place-items:center;flex:none}
+.author .ash svg{width:30px;height:30px}
+.author h4{color:var(--navy);font-family:var(--font-display);text-transform:none;letter-spacing:0;font-size:1.05rem;margin-bottom:7px}
+.author p{font-size:.95rem;color:var(--ink-soft);line-height:1.62}
+.related h2{margin:46px 0 18px}
+.related-cards{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+.rcard{background:#fff;border:1px solid rgba(10,22,40,.08);border-radius:12px;padding:20px;transition:border-color .2s,transform .2s;display:block}
+.rcard:hover{border-color:var(--gold);transform:translateY(-3px)}
+.rcard .rtax{font-family:var(--font-display);font-weight:700;font-size:.62rem;letter-spacing:.14em;text-transform:uppercase;color:var(--gold-deep);display:block;margin-bottom:9px}
+.rcard h4{color:var(--navy);font-family:var(--font-display);text-transform:none;letter-spacing:0;font-size:1.0rem;line-height:1.3}
+@media(max-width:620px){.related-cards{grid-template-columns:1fr}}
+</style>
+</head>
+<body>
+<div class="grain"></div>
+<header class="site"><div class="wrap nav"><a class="brand" href="https://www.abhomesolutions.pro/"><span class="badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3l7 3v5c0 4.5-3 7.5-7 9-4-1.5-7-4.5-7-9V6l7-3z"/></svg></span>AB Home Solutions<small>HOMEGUARD&#8482;</small></a><nav class="navlinks" id="nav"><a href="https://www.abhomesolutions.pro/resources" class="">Resources</a><a href="https://www.abhomesolutions.pro/homeguard" class="">HomeGuard&#8482;</a><a href="https://www.abhomesolutions.pro/blog" class="active">Blog</a><a href="https://www.abhomesolutions.pro/about" class="">About</a><a href="https://www.abhomesolutions.pro/start" class="btn btn-gold">Get the Free Guide &#8594;</a></nav><button class="menu-btn" id="menuBtn" aria-label="Menu" aria-expanded="false"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4 7h16M4 12h16M4 17h16"/></svg></button></div></header>
+
+<section class="hero" style="padding-bottom:clamp(46px,6vw,72px)">
+  <div class="wrap" style="max-width:780px">
+    <div class="crumb"><a href="https://www.abhomesolutions.pro/blog">&larr; Knowledge Base</a><span>/</span>Roofing</div>
+    <span class="tax">Roofing</span>
+    <h1 style="font-size:clamp(1.9rem,4.6vw,3.1rem);margin-bottom:6px">Reading a Roofing Quote Without Getting Fooled</h1>
+    <p class="postmeta">Maryland &middot; DC &nbsp;&bull;&nbsp; 5 min read &nbsp;&bull;&nbsp; HomeGuard&#8482; Intel</p>
+  </div>
+</section>
+<section class="article section" style="padding-top:clamp(48px,7vw,80px)">
+  <div class="wrap">
+    <p class="hook">Two roofing quotes for the same house can differ by thousands of dollars &mdash; and the cheaper one is often the more expensive one once the &ldquo;extras&rdquo; arrive. The trick isn&rsquo;t finding the lowest number. It&rsquo;s learning to read what each line actually promises.</p>
+    <div class="why"><div class="lbl">Why this matters to you</div><p>A roof is one of the largest single repairs a Maryland or DC homeowner ever pays for &mdash; commonly <strong>$10,000 to $25,000+</strong>. Vague quotes are designed to look cheap up front and grow once the crew is on your roof. A clear, itemized quote lets you compare bids honestly and locks the price before work starts.</p></div>
+    <div class="flag"><div class="fhead"><span class="fnum">1</span><h3>Tear-Off vs. Layover &mdash; Know Which You&rsquo;re Buying</h3></div><div class="prose"><p>A <strong>tear-off</strong> removes the old roof down to the deck; a <strong>layover</strong> installs new shingles on top of the old ones. Layovers are cheaper today and costlier later &mdash; they hide rot and often void warranties. The quote should say plainly which one it is.</p></div><div class="dothis"><b>Do this</b>If the quote doesn&rsquo;t specify tear-off or layover, treat the price as incomplete and ask.</div></div>
+    <div class="flag"><div class="fhead"><span class="fnum">2</span><h3>Check the Squares and the Material Spec</h3></div><div class="prose"><p>Roofing is measured in <strong>squares</strong> (100 sq ft each). The quote should list the number of squares, the shingle brand and line, and the underlayment. &ldquo;Architectural shingles&rdquo; with no brand is a placeholder, not a spec.</p></div><div class="dothis"><b>Do this</b>Make sure two competing quotes list the same squares &mdash; if they differ a lot, someone measured wrong.</div></div>
+    <div class="flag"><div class="fhead"><span class="fnum">3</span><h3>Look for Flashing, Underlayment, and Ventilation</h3></div><div class="prose"><p>The leaks that come back are almost always at the details: <strong>flashing</strong> around chimneys and valleys, ice-and-water shield, drip edge, and proper ventilation. Cheap quotes win by quietly leaving these out.</p></div><div class="dothis"><b>Do this</b>Confirm flashing and underlayment are line items, not assumptions.</div></div>
+    <div class="flag"><div class="fhead"><span class="fnum">4</span><h3>Read the Warranty &mdash; Both of Them</h3></div><div class="prose"><p>There are two warranties: the <strong>manufacturer&rsquo;s</strong> (on the shingles) and the <strong>workmanship</strong> (on the install). A great shingle installed badly still leaks, so the workmanship warranty &mdash; and how long the company has existed to honor it &mdash; matters most.</p></div><div class="dothis"><b>Do this</b>Get both warranty terms in writing, with the workmanship length stated in years.</div></div>
+    <div class="flag"><div class="fhead"><span class="fnum">5</span><h3>Watch the Payment Terms and &ldquo;Allowances&rdquo;</h3></div><div class="prose"><p>Large up-front deposits and open-ended &ldquo;allowances for unforeseen decking&rdquo; are where budgets blow up. A fair quote caps decking replacement at a stated per-sheet price so a surprise can&rsquo;t become a blank check.</p></div><div class="dothis"><b>Do this</b>Ask for a fixed per-sheet price on replacement decking and a milestone-based payment schedule.</div></div>
+    <div class="guard"><h3><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3l7 3v5c0 4.5-3 7.5-7 9-4-1.5-7-4.5-7-9V6l7-3z"/></svg> What a Complete Roofing Quote Includes</h3><ul><li><span class="ck"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12l4.5 4.5L19 7"/></svg></span><span><strong>Tear-off or layover</strong> clearly stated</span></li><li><span class="ck"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12l4.5 4.5L19 7"/></svg></span><span>Number of <strong>squares</strong> and named shingle brand/line</span></li><li><span class="ck"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12l4.5 4.5L19 7"/></svg></span><span><strong>Flashing, underlayment, drip edge, ventilation</strong> as line items</span></li><li><span class="ck"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12l4.5 4.5L19 7"/></svg></span><span>Both <strong>manufacturer and workmanship warranties</strong></span></li><li><span class="ck"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12l4.5 4.5L19 7"/></svg></span><span>Capped <strong>decking-replacement price</strong> and cleanup/permit terms</span></li></ul></div>
+    <h2>Common Mistakes Homeowners Make</h2>
+    <ul class="mistakes"><li>Choosing the lowest number without comparing what&rsquo;s included</li><li>Accepting &ldquo;architectural shingles&rdquo; with no brand or line named</li><li>Missing that the cheap bid is a layover, not a tear-off</li><li>Ignoring the open-ended &ldquo;decking allowance&rdquo;</li><li>Never reading the workmanship warranty length</li></ul>
+    <h2 style="margin-top:38px">The Bottom Line</h2>
+    <div class="bottomline"><p>A roofing quote is a promise written in line items. When two bids name the same squares, the same shingles, the same flashing, and the same warranties, you can finally compare price honestly. When one is vague, it isn&rsquo;t cheaper &mdash; it&rsquo;s just unfinished. <strong>Make every quote spell it out before you sign.</strong></p></div>
+    <div class="author"><span class="ash"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3l7 3v5c0 4.5-3 7.5-7 9-4-1.5-7-4.5-7-9V6l7-3z"/></svg></span><div><h4>About AB Home Solutions</h4><p>AB Home Solutions is a free homeowner-resources hub for Maryland and DC, on a mission to protect homeowners &mdash; especially seniors and the underserved &mdash; from predatory repair tactics. Built by people with years of hands-on trade experience, our HomeGuard&#8482; resources stand for honest information, clear guidance, and zero pressure. Education over profits.</p></div></div>
+    <div class="related"><h2>Related Reading</h2><div class="related-cards"><a class="rcard" href="https://www.abhomesolutions.pro/blog/storm-chaser-roof-scams"><span class="rtax">Anti-Scam</span><h4>Storm Chasers After Hail: A Maryland Defense Playbook</h4></a><a class="rcard" href="https://www.abhomesolutions.pro/blog/contractor-scam-red-flags"><span class="rtax">Anti-Scam</span><h4>7 Red Flags a Contractor Is About to Scam You</h4></a><a class="rcard" href="https://www.abhomesolutions.pro/blog/vet-a-contractor"><span class="rtax">Hiring &amp; Vetting</span><h4>How to Vet a Contractor Before You Pay a Dime</h4></a></div></div>
+  </div>
+</section>
+<section class="section section--navy-800"><div class="wrap"><div class="band"><h2>Compare Bids With Confidence</h2><p class="lead">The free HomeGuard&#8482; guide and the Contractor Clarity&#8482; checklist walk you through reading an estimate, comparing materials, and spotting the gaps &mdash; so the lowest number doesn&rsquo;t become the costliest.</p><div class="cta-row"><a href="https://www.abhomesolutions.pro/start" class="btn btn-lg btn-navy">Get the Free Guide &#8594;</a><a href="https://www.abhomesolutions.pro/contractor-clarity" class="btn btn-lg btn-outline">See Contractor Clarity&#8482;</a></div></div></div></section>
+<footer class="site"><div class="wrap"><div class="foot-grid"><div class="foot-brand"><a class="brand" href="https://www.abhomesolutions.pro/"><span class="badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3l7 3v5c0 4.5-3 7.5-7 9-4-1.5-7-4.5-7-9V6l7-3z"/></svg></span>AB Home Solutions<small>HOMEGUARD&#8482;</small></a><p>Free, honest home-maintenance resources for Maryland &amp; DC homeowners — built to help you care for your home inside and out, and steer clear of predatory contractors.</p></div><div><h5>Resources</h5><ul><li><a href="https://www.abhomesolutions.pro/homeguard">HomeGuard&#8482; System</a></li><li><a href="https://www.abhomesolutions.pro/contractor-clarity">Contractor Clarity&#8482;</a></li><li><a href="https://www.abhomesolutions.pro/resources">Guides &amp; Checklists</a></li><li><a href="https://www.abhomesolutions.pro/blog">Knowledge Base</a></li></ul></div><div><h5>Topics</h5><ul><li><a href="https://www.abhomesolutions.pro/blog#anti-scam">Anti-Scam</a></li><li><a href="https://www.abhomesolutions.pro/blog#hiring">Hiring &amp; Vetting</a></li><li><a href="https://www.abhomesolutions.pro/blog#maintenance">Maintenance</a></li><li><a href="https://www.abhomesolutions.pro/blog#insurance">Insurance</a></li></ul></div><div><h5>Connect</h5><ul><li><a href="https://instagram.com/ab.home.solutions" target="_blank" rel="noopener">Instagram</a></li><li><a href="https://www.abhomesolutions.pro/start">Get the Free Guide</a></li><li><a href="https://www.abhomesolutions.pro/about">Our Mission</a></li><li><a href="https://www.abhomesolutions.pro/start">Newsletter</a></li></ul></div></div><div class="foot-bottom"><span>&copy; 2026 AB Home Solutions. All rights reserved. &middot; abhomesolutions.pro</span><span>Homeowner Resources &middot; Maryland &amp; DC &middot; Education Over Profits</span></div></div></footer>
+<script>
+(function(){var b=document.getElementById('menuBtn'),n=document.getElementById('nav');
+if(b){b.addEventListener('click',function(){var o=n.classList.toggle('open');b.setAttribute('aria-expanded',o);});}})();
+</script>
+</body>
+</html>

@@ -1,0 +1,4 @@
+# Netlify redirects for AB Home Solutions
+# Blog posts live as <slug>.html at the repo root, but are linked as
+# /blog/<slug>. This rewrite serves the matching file without changing the URL.
+/blog/*  /:splat.html  200

@@ -342,7 +342,7 @@ footer ul a:hover{color:var(--gold)}
     </a>
     <nav class="navlinks" id="nav">
       <a href="/resources" class="">Resources</a><a href="/homeguard" class="active">HomeGuard™</a><a href="/blog" class="">Blog</a><a href="/about" class="">About</a>
-      <a href="/start" class="btn btn-gold">Get the Free Guide →</a>
+      <a href="/homeguard#buy" class="btn btn-gold">Get the Guide · $3.99</a>
     </nav>
     <button class="menu-btn" id="menuBtn" aria-label="Menu" aria-expanded="false"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4 7h16M4 12h16M4 17h16"/></svg></button>
   </div>
@@ -350,11 +350,11 @@ footer ul a:hover{color:var(--gold)}
 
 <section class="hero">
   <div class="wrap">
-    <span class="tag reveal"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3l7 3v5c0 4.5-3 7.5-7 9-4-1.5-7-4.5-7-9V6l7-3z"/></svg> Our Flagship Free Toolkit</span>
+    <span class="tag reveal"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3l7 3v5c0 4.5-3 7.5-7 9-4-1.5-7-4.5-7-9V6l7-3z"/></svg> The Complete System · $3.99</span>
     <h1 class="reveal d1">The HomeGuard™ System</h1>
     <p class="lead reveal d2">A straightforward monthly action plan to protect your home and your money — built from real field experience across Maryland and DC, covering everything from the roof down to the basement.</p>
     <div class="cta-row reveal d3">
-      <a href="/start" class="btn btn-lg btn-gold">Get the Free Guide →</a>
+      <a href="/homeguard#buy" class="btn btn-lg btn-gold">Get the Guide · $3.99 →</a>
       <a href="/contractor-clarity" class="btn btn-lg btn-ghost">See Contractor Clarity™</a>
     </div>
   </div>
@@ -406,15 +406,77 @@ footer ul a:hover{color:var(--gold)}
   </div>
 </section>
 
-<section class="section section--cream-soft">
+<section class="section section--cream-soft" id="buy">
+  <style>
+    .price-grid{display:grid;gap:20px;grid-template-columns:repeat(3,1fr)}
+    @media(max-width:880px){.price-grid{grid-template-columns:1fr}}
+    .price-card{background:#fff;border:1px solid rgba(10,22,40,.08);border-radius:16px;
+      padding:30px 26px;display:flex;flex-direction:column;box-shadow:0 18px 40px -28px rgba(10,22,40,.35)}
+    .price-card.featured{border:2px solid var(--gold);position:relative}
+    .price-card .flag-top{position:absolute;top:-12px;left:50%;transform:translateX(-50%);
+      background:var(--gold);color:var(--navy);font-family:var(--font-display);font-weight:800;
+      font-size:.62rem;letter-spacing:.12em;text-transform:uppercase;padding:4px 12px;border-radius:99px}
+    .price-card h3{color:var(--ink);font-size:1.15rem;margin-bottom:4px}
+    .price-card .price{font-family:var(--font-display);font-weight:800;color:var(--navy);
+      font-size:2.2rem;margin:8px 0 2px}
+    .price-card .per{color:var(--ink-soft);font-size:.8rem;margin-bottom:16px}
+    .price-card ul{list-style:none;margin:0 0 22px;padding:0;flex:1}
+    .price-card li{color:var(--ink-soft);font-size:.92rem;padding:6px 0 6px 26px;position:relative}
+    .price-card li::before{content:"✓";position:absolute;left:2px;color:var(--gold-deep);font-weight:700}
+    .price-card .btn{width:100%;justify-content:center}
+    .btn-navy-solid{background:var(--navy);color:var(--cream)}
+    .btn-navy-solid:hover{background:var(--navy-800);transform:translateY(-2px)}
+    .buy-fineprint{text-align:center;color:var(--ink-soft);font-size:.82rem;margin-top:18px}
+  </style>
   <div class="wrap">
-    <div class="band reveal">
-      <h2>Get the HomeGuard™ starter guide free</h2>
-      <p class="lead">Sign up and we'll send the starter guide plus our best checklists straight to your inbox. No pressure, no pitch.</p>
-      <div class="cta-row" style="justify-content:center">
-        <a href="/start" class="btn btn-lg btn-navy">Get the Free Guide →</a><a href="/blog" class="btn btn-lg btn-outline">Browse the Knowledge Base</a>
+    <div class="sec-head reveal">
+      <span class="eyebrow">Get HomeGuard™</span>
+      <h2>Start for less than a coffee</h2>
+      <p class="lead">One small purchase today — or the full path from guide to pro support. Every tier funds free anti-scam education for DMV homeowners.</p>
+    </div>
+    <div class="price-grid">
+      <div class="price-card featured reveal">
+        <span class="flag-top">Start Here</span>
+        <h3>The HomeGuard™ Guide</h3>
+        <div class="price">$3.99</div>
+        <div class="per">one-time · instant PDF download</div>
+        <ul>
+          <li>The 5-step monthly rhythm (36 pages)</li>
+          <li>Seasonal calendar for MD &amp; DC weather</li>
+          <li>Contractor Red Flag Checklist</li>
+          <li>Printable trackers, logs &amp; call sheets</li>
+          <li>Real photo examples from our jobs</li>
+          <li>FAQ + Milestones &amp; Wins tracker</li>
+        </ul>
+        <a href="/buy" class="btn btn-lg btn-gold">Buy &amp; Download — $3.99</a>
+      </div>
+      <div class="price-card reveal d1">
+        <h3>HomeGuard™ Pro</h3>
+        <div class="price">$49</div>
+        <div class="per">per year · launching soon</div>
+        <ul>
+          <li>Everything in the Guide</li>
+          <li>Monthly email reminders, timed to season</li>
+          <li>Digital fill-in trackers (no printing)</li>
+          <li>Storm-alert prep notices for the DMV</li>
+          <li>Priority email Q&amp;A with our team</li>
+        </ul>
+        <a href="/start" class="btn btn-lg btn-navy-solid">Join the Waitlist — Free</a>
+      </div>
+      <div class="price-card reveal d2">
+        <h3>Maintenance Visits</h3>
+        <div class="price">Quote</div>
+        <div class="per">Maryland &amp; DC homes only</div>
+        <ul>
+          <li>Annual professional walk-around</li>
+          <li>Written condition report with photos</li>
+          <li>Prioritized fix-it list (DIY vs. pro)</li>
+          <li>Performed by AB Home Solutions</li>
+        </ul>
+        <a href="mailto:a.b.limited2023@gmail.com?subject=Maintenance%20Visit%20Quote" class="btn btn-lg btn-navy-solid">Request a Quote</a>
       </div>
     </div>
+    <p class="buy-fineprint">Secure checkout by Stripe · Instant download · Not happy? Reply to your receipt within 30 days for a full refund.</p>
   </div>
 </section>
 
@@ -448,7 +510,7 @@ footer ul a:hover{color:var(--gold)}
         <h5>Connect</h5>
         <ul>
           <li><a href="https://instagram.com/ab.home.solutions" target="_blank" rel="noopener">Instagram</a></li>
-          <li><a href="/start">Get the Free Guide</a></li>
+          <li><a href="/homeguard#buy">Get the Guide · $3.99</a></li><li><a href="/start">Free Checklists</a></li>
           <li><a href="/about">Our Mission</a></li>
           <li><a href="/start">Newsletter</a></li>
         </ul>

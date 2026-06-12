@@ -40,3 +40,18 @@ All nav, footer, and button links already point to these clean paths (and `/` fo
 ## Still to come (next batches)
 1. Form + email-service wiring (the conversion path)
 2. Blog posts 1–6 as HTML + the 5 pillar/category pages
+
+
+## Selling the guide at $3.99 — launch checklist
+
+1. **Stripe**: Dashboard → Products → Add "HomeGuard™ Guide", $3.99 one-time →
+   Create Payment Link. Under *After payment*, redirect to
+   `https://abhomesolutions.pro/guide-download`.
+2. **_redirects**: replace `REPLACE_WITH_PAYMENT_LINK` in the `/buy` rule with
+   the real Payment Link URL. Deploy.
+3. **Test**: `/buy` → Stripe test card `4242 4242 4242 4242` → should land on
+   `/guide-download` and the PDF should download.
+4. `/start` stays the free-checklist email funnel (front-end only until Phase 2
+   wires Kit/MailerLite).
+
+Strategy and tier ladder: see `BUSINESS-MODEL.md`.

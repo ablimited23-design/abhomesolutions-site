@@ -1,3 +1,8 @@
+# Checkout: /buy -> Stripe Payment Link for the $3.99 HomeGuard Guide.
+# Create the product + Payment Link in Stripe, set its after-payment redirect to
+# https://abhomesolutions.pro/guide-download then replace the URL below.
+/buy  https://buy.stripe.com/REPLACE_WITH_PAYMENT_LINK  302!
+
 # Netlify redirects for AB Home Solutions
 # Blog posts live as <slug>.html at the repo root, but are linked as
 # /blog/<slug>. This rewrite serves the matching file without changing the URL.

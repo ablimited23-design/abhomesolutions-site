@@ -165,7 +165,7 @@ Hi {{first_name}}, September's list:
 - **Walk the foundation line and seal gaps** bigger than a pencil — mice need only that much, and they're house-hunting this month.
 - **Book furnace service now** (same logic as spring: October booking = November appointment).
 - **Use a fireplace? Book the chimney sweep** before the first cold snap.
-- **Replace smoke and CO detector batteries** — do it on a date you'll remember.
+- **Test every smoke and CO alarm, and check the manufacture date on the back.** Units over 10 years old must be replaced — and in Maryland, replacement battery alarms must be sealed 10-year units with a hush button (it's the law, Public Safety §9-104).
 - **Check weatherstripping:** close a door on a dollar bill; if it slides out easily, the seal is gone.
 
 **Pro tip:** September is the DMV's best month for exterior work — contractors are between summer rush and fall panic, and caulk/paint cure perfectly in this weather. Anything you flagged all summer: fix it this month.

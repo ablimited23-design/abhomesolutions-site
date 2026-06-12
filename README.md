@@ -55,3 +55,20 @@ All nav, footer, and button links already point to these clean paths (and `/` fo
    wires Kit/MailerLite).
 
 Strategy and tier ladder: see `BUSINESS-MODEL.md`.
+
+
+## HomeGuard™ Pro ($49/yr) — launch checklist
+
+1. **Stripe**: Products → Add "HomeGuard™ Pro", $49/year **recurring** → Payment
+   Link → after-payment redirect to `https://abhomesolutions.pro/pro-welcome`.
+2. **_redirects**: replace `REPLACE_WITH_PRO_PAYMENT_LINK` with the real link.
+3. **Email automation** (Kit/MailerLite): create a "Pro Members" list. Paste the
+   13 emails from `pro-content/reminder-emails.md` as a monthly automation
+   (welcome on signup, then one on the 1st of each month). Add each Stripe Pro
+   customer to the list (Zapier "Stripe new subscription → add subscriber", or
+   manually at low volume).
+4. **Storm alerts**: send manually from `pro-content/storm-prep-notices.md`
+   when NWS issues a DMV watch/warning. Five templates cover the usual events.
+5. **Note**: this repo is public-facing — `pro-content/` holds email copy
+   (acceptable); the tracker PDF lives at `/downloads/pro/` (noindexed).
+   If piracy ever becomes a real problem, move delivery into the email tool.

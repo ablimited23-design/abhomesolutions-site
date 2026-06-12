@@ -26,14 +26,16 @@ downloader. Profit at Tier 1 is marketing budget, not income.
 - `/buy` → Stripe Payment Link (302 redirect in `netlify.toml`) → `/guide-download`
 - `/homeguard#buy` → three-tier pricing section (Guide · Pro waitlist · Visits)
 - `/start` → free checklist email capture (lead gen unchanged)
-- Pro is sold as a **waitlist** — validate demand before building it.
+- Pro is **live**: /pro sales page, /buy-pro Stripe redirect, /pro-welcome delivery,
+  12 reminder emails + 5 storm notices in `pro-content/`, fillable tracker pack at
+  `/downloads/pro/homeguard-pro-trackers.pdf`.
 
 ## Scale path (in order — don't skip)
 1. **Now:** Stripe link live, guide selling, waitlist counting signups.
 2. **At ~100 guide sales:** wire `/start` form to an email service (Kit/MailerLite);
    3-email nurture: checklist → story from a real job → $3.99 guide offer.
-3. **At ~50 Pro waitlist signups:** build Pro as an email automation (seasonal
-   reminders + Google Drive trackers). No app needed at $49/yr.
+3. ~~Build Pro~~ **Done** — wire the reminder emails into Kit/MailerLite and
+   connect Stripe subscribers to the list (step 3 of the Pro launch checklist).
 4. **At steady Pro revenue:** productize the inspection (fixed price, fixed
    checklist, written report) so it's sellable by any tech, not just the owner.
 5. **The real scale play:** license HomeGuard™ to contractors in other metros

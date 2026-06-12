@@ -28,3 +28,8 @@
   for = "/downloads/*"
   [headers.values]
     X-Robots-Tag = "noindex"
+
+[[headers]]
+  for = "/pro-welcome"
+  [headers.values]
+    X-Robots-Tag = "noindex"

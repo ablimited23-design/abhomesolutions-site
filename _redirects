@@ -3,6 +3,11 @@
 # https://abhomesolutions.pro/guide-download then replace the URL below.
 /buy  https://buy.stripe.com/REPLACE_WITH_PAYMENT_LINK  302!
 
+# Checkout: /buy-pro -> Stripe Payment Link for HomeGuard Pro ($49/yr subscription).
+# Create a recurring product in Stripe, set after-payment redirect to
+# https://abhomesolutions.pro/pro-welcome then replace the URL below.
+/buy-pro  https://buy.stripe.com/REPLACE_WITH_PRO_PAYMENT_LINK  302!
+
 # Netlify redirects for AB Home Solutions
 # Blog posts live as <slug>.html at the repo root, but are linked as
 # /blog/<slug>. This rewrite serves the matching file without changing the URL.

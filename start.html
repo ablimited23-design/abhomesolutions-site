@@ -279,7 +279,7 @@ b.setAttribute('aria-expanded',o);});}
 </script>
 <script>
 (function(){
-var ENDPOINT = "https://script.google.com/macros/s/AKfycbxNhYRunsX02t8Khphcie9qhNTA4m_xugiGr9Em22tcIDVS9vcCYRl1Z_5SLRm3vuWlbg/exec";
+var ENDPOINT = "/.netlify/functions/submit-lead";
 var f = document.getElementById('leadForm');
 if(!f) return;
 f.addEventListener('submit', function(e){
@@ -297,10 +297,10 @@ if(!ok){ alert('Please check the box so we can send your guide.'); return; }
 var btn = f.querySelector('button[type=submit]');
 if(btn){ btn.disabled = true; btn.textContent = 'Sending…'; }
 var data = new URLSearchParams({ fname:fn, lname:ln, email:em, zip:zp, company:hp, source:'start-page' });
-fetch(ENDPOINT, { method:'POST', mode:'no-cors', body:data })
+fetch(ENDPOINT, { method:'POST', body:data })
 .finally(function(){ window.location.href = '/thank-you'; });
 });
 })();
 </script>
 </body>
-                                                                                </html>
+  </html>

@@ -271,19 +271,21 @@ section{position:relative;z-index:2}
   letter-spacing:0;margin-bottom:6px}
 .value p{font-size:.88rem;color:var(--mist)}
 
-/* is / isn't */
-.compare{display:grid;grid-template-columns:1fr 1fr;gap:20px}
-.compare .col{padding:28px;border-radius:var(--r)}
-.compare .yes{background:rgba(224,165,46,.1);border:1px solid var(--line)}
-.compare .no{background:var(--navy-700);border:1px solid var(--line-soft)}
-.compare h4{font-family:var(--font-display);text-transform:uppercase;letter-spacing:.06em;
-  font-size:.9rem;margin-bottom:16px;display:flex;align-items:center;gap:9px}
-.compare .yes h4{color:var(--gold)}
-.compare ul{list-style:none;display:grid;gap:11px}
-.compare li{font-size:.95rem;color:var(--mist);padding-left:20px;position:relative}
-.compare li::before{content:"";position:absolute;left:0;top:9px;width:7px;height:7px;
-  border-radius:50%;background:var(--gold)}
-.compare .no li::before{background:var(--mist-dim)}
+/* is / isn't — checklist rows */
+.compare{display:grid;grid-template-columns:1fr 1fr;gap:40px}
+.compare h4{font-family:var(--font-display);font-weight:800;text-transform:uppercase;letter-spacing:.05em;font-size:1rem;display:inline-flex;align-items:center;gap:11px;margin-bottom:14px}
+.compare h4 .ic{width:30px;height:30px;border-radius:8px;display:grid;place-items:center;flex:none}
+.compare h4 .ic svg{width:17px;height:17px}
+.compare .yes h4{color:var(--gold-bright)}
+.compare .yes h4 .ic{background:var(--gold);color:var(--navy)}
+.compare .no h4{color:var(--cream)}
+.compare .no h4 .ic{background:var(--navy-600);color:#e2674f}
+.compare ul{list-style:none;display:grid;gap:2px}
+.compare li{display:flex;gap:12px;align-items:flex-start;font-size:.95rem;line-height:1.45;color:var(--mist);padding:12px 4px;border-bottom:1px solid var(--line-soft)}
+.compare li:last-child{border-bottom:none}
+.compare li svg{width:17px;height:17px;flex:none;margin-top:3px}
+.compare .yes li svg{color:var(--gold-bright)}
+.compare .no li svg{color:#e2674f}
 
 /* thank you */
 .ty{text-align:center;max-width:620px;margin:0 auto}
@@ -417,23 +419,23 @@ footer ul a:hover{color:var(--gold)}
       <h2>What AB Home Solutions is — and isn't</h2>
     </div>
     <div class="compare reveal">
-      <div class="col yes">
-        <h4><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3l7 3v5c0 4.5-3 7.5-7 9-4-1.5-7-4.5-7-9V6l7-3z"/></svg> We are</h4>
+      <div class="yes">
+        <h4><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg></span>We are</h4>
         <ul>
-          <li>A free homeowner education and resources hub</li>
-          <li>A library of guides, checklists, and plain-English articles</li>
-          <li>A framework for vetting and hiring contractors wisely</li>
-          <li>Focused on protecting your home and your money</li>
-          <li>Free where we say free — our blog, checklists, and starter guides cost nothing; the complete HomeGuard™ Guide is a one-time $7.99, and that small price funds the free education everyone else gets</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg>A free homeowner education and resources hub</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg>A library of guides, checklists, and plain-English articles</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg>A framework for vetting and hiring contractors wisely</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg>Focused on protecting your home and your money</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg>Free where we say free — our blog, checklists, and starter guides cost nothing; the complete HomeGuard™ Guide is a one-time $7.99, and that small price funds the free education everyone else gets</li>
         </ul>
       </div>
-      <div class="col no">
-        <h4><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M6 6l12 12M18 6L6 18"/></svg> We are not</h4>
+      <div class="no">
+        <h4><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M6 6l12 12M18 6L6 18"/></svg></span>We are not</h4>
         <ul>
-          <li>A contractor or repair company</li>
-          <li>Selling roofing, repairs, or physical home services</li>
-          <li>Taking a cut from any pro you choose to hire</li>
-          <li>Here to pressure you into anything</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M6 6l12 12M18 6L6 18"/></svg>A contractor or repair company</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M6 6l12 12M18 6L6 18"/></svg>Selling roofing, repairs, or physical home services</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M6 6l12 12M18 6L6 18"/></svg>Taking a cut from any pro you choose to hire</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M6 6l12 12M18 6L6 18"/></svg>Here to pressure you into anything</li>
         </ul>
       </div>
     </div>

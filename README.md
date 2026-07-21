@@ -42,9 +42,9 @@ All nav, footer, and button links already point to these clean paths (and `/` fo
 2. Blog posts 1–6 as HTML + the 5 pillar/category pages
 
 
-## Selling the guide at $3.99 — launch checklist
+## Selling the guide at $7.99 — launch checklist
 
-1. **Stripe**: Dashboard → Products → Add "HomeGuard™ Guide", $3.99 one-time →
+1. **Stripe**: Dashboard → Products → Add "HomeGuard™ Guide", $7.99 one-time →
    Create Payment Link. Under *After payment*, redirect to
    `https://abhomesolutions.pro/guide-download`.
 2. **_redirects**: replace `REPLACE_WITH_PAYMENT_LINK` in the `/buy` rule with

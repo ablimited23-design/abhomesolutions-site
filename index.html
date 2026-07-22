@@ -4,6 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>AB Home Solutions — Homeowner Resources for Maryland & DC | HomeGuard™</title>
+<link rel="canonical" href="https://www.abhomesolutions.pro/">
 <meta name="description" content="Free, honest home-maintenance resources for Maryland & DC homeowners. Learn to maintain your home inside and out and avoid predatory contractors — the HomeGuard™ way. Education over profits.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -32,6 +33,9 @@
   nav.links{display:flex;gap:30px;align-items:center}
   nav.links a{font-weight:600;font-size:13px;text-transform:uppercase;letter-spacing:.08em;color:var(--cream-dim);transition:color .2s}
   nav.links a:hover{color:var(--gold-bright)}
+  .menu-btn{display:none;background:none;border:1px solid var(--line);border-radius:9px;width:42px;height:42px;color:var(--cream);cursor:pointer;place-items:center;transition:border-color .2s}
+  .menu-btn:hover{border-color:var(--gold-bright)}
+  .menu-btn svg{width:22px;height:22px}
   .btn{display:inline-block;font-weight:700;font-size:13px;text-transform:uppercase;letter-spacing:.07em;padding:13px 22px;border-radius:3px;transition:.25s;cursor:pointer;border:1px solid var(--gold)}
   .btn-gold{background:var(--gold);color:var(--navy)}
   .btn-gold:hover{background:var(--gold-bright);transform:translateY(-2px)}
@@ -125,7 +129,12 @@
   .fnote{max-width:26em;font-size:15px}
   .fbar{border-top:1px solid rgba(212,161,60,.14);margin-top:40px;padding-top:22px;font-size:13px;font-family:'Archivo';letter-spacing:.04em;text-transform:uppercase;color:#7d8aa0;display:flex;justify-content:space-between;flex-wrap:wrap;gap:10px}
   @media(max-width:880px){
-    nav.links{display:none}
+    .menu-btn{display:grid}
+    .nav .wrap>.btn-gold{display:none}
+    nav.links{position:absolute;top:calc(100% + 8px);left:0;right:0;flex-direction:column;align-items:stretch;gap:0;background:var(--navy-2);border:1px solid var(--line);border-radius:12px;padding:6px 16px;transform:translateY(-14px);opacity:0;pointer-events:none;transition:transform .28s,opacity .28s;box-shadow:0 24px 50px -20px rgba(0,0,0,.55)}
+    nav.links.open{transform:none;opacity:1;pointer-events:auto}
+    nav.links a{padding:13px 2px;width:100%;border-bottom:1px solid rgba(245,241,230,.08);font-size:15px}
+    nav.links a:last-child{border-bottom:none}
     .hero .grid,.hg .grid,.signup .wrap{grid-template-columns:1fr;gap:34px}
     .services{grid-template-columns:1fr 1fr}.posts{grid-template-columns:1fr}
     .signup .box{text-align:left}.fgrid{grid-template-columns:1fr 1fr}.trust .wrap{justify-content:flex-start}
@@ -143,7 +152,7 @@
       <svg class="shield" viewBox="0 0 30 34" fill="none"><path d="M15 1 28 6v11c0 9-6.5 13.5-13 16C8.5 30.5 2 26 2 17V6L15 1Z" stroke="#d4a13c" stroke-width="2" fill="rgba(212,161,60,.08)"/><path d="M9.5 16.5l3.8 3.8 7-8" stroke="#f0c14b" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg>
       AB Home Solutions <span class="tm">HomeGuard™</span>
     </a>
-    <nav class="links">
+    <nav class="links" id="navMenu">
       <a href="/resources">Resources</a>
       <a href="/homeguard">HomeGuard™</a>
       <a href="/contractor-clarity">Contractor Clarity™</a>
@@ -151,6 +160,7 @@
       <a href="/about">About</a>
     </nav>
     <a href="/homeguard#buy" class="btn btn-gold">Get the Guide · $7.99</a>
+    <button class="menu-btn" id="menuBtn" aria-label="Menu" aria-expanded="false"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4 7h16M4 12h16M4 17h16"/></svg></button>
   </div>
 </header>
 
@@ -328,5 +338,8 @@
   </div>
 </footer>
 
+<script>
+(function(){var b=document.getElementById('menuBtn'),n=document.getElementById('navMenu');if(b&&n){b.addEventListener('click',function(){var o=n.classList.toggle('open');b.setAttribute('aria-expanded',o);});n.addEventListener('click',function(e){if(e.target.tagName==='A')n.classList.remove('open');});}})();
+</script>
 </body>
 </html>

@@ -409,8 +409,17 @@ footer ul a:hover{color:var(--gold)}
 
 <section class="section section--cream-soft" id="buy">
   <style>
-    .price-grid{display:grid;gap:20px;grid-template-columns:repeat(3,1fr)}
-    @media(max-width:880px){.price-grid{grid-template-columns:1fr}}
+    .pcar{position:relative;max-width:780px;margin:0 auto}
+    .pcar-view{overflow:hidden}
+    .pcar-track{display:flex;transition:transform .45s cubic-bezier(.2,.7,.2,1)}
+    .pcar-slide{flex:0 0 50%;padding:16px 10px 4px}
+    .pcar-nav{display:flex;align-items:center;justify-content:center;gap:16px;margin-top:20px}
+    .pcar-arrow{width:44px;height:44px;border-radius:50%;border:1px solid rgba(10,22,40,.18);background:#fff;color:var(--navy);font-size:1.5rem;line-height:1;display:grid;place-items:center;cursor:pointer;transition:.2s}
+    .pcar-arrow:hover{border-color:var(--gold);color:var(--gold-deep)}
+    .pcar-dots{display:flex;gap:9px}
+    .pcar-dot{width:10px;height:10px;border-radius:50%;background:rgba(10,22,40,.16);border:none;cursor:pointer;transition:.2s;padding:0}
+    .pcar-dot.on{background:var(--gold)}
+    @media(max-width:640px){.pcar-slide{flex:0 0 100%}}
     .price-card{background:#fff;border:1px solid rgba(10,22,40,.08);border-radius:16px;
       padding:30px 26px;display:flex;flex-direction:column;box-shadow:0 18px 40px -28px rgba(10,22,40,.35)}
     .price-card.featured{border:2px solid var(--gold);position:relative}
@@ -433,51 +442,94 @@ footer ul a:hover{color:var(--gold)}
     <div class="sec-head reveal">
       <span class="eyebrow">Get HomeGuard™</span>
       <h2>Start for less than a coffee</h2>
-      <p class="lead">One small purchase today — or the full path from guide to pro support. Every tier funds free anti-scam education for DMV homeowners.</p>
+      <p class="lead">One small purchase today — or the whole set. Every guide funds free anti-scam education for DMV homeowners.</p>
     </div>
-    <div class="price-grid">
-      <div class="price-card featured reveal">
-        <span class="flag-top">Start Here</span>
-        <h3>The HomeGuard™ Guide</h3>
-        <div class="price">$7.99</div>
-        <div class="per">one-time PDF · launching soon</div>
-        <ul>
-          <li>The 5-step monthly rhythm (36 pages)</li>
-          <li>Seasonal calendar for MD &amp; DC weather</li>
-          <li>Contractor Red Flag Checklist</li>
-          <li>Printable trackers, logs &amp; call sheets</li>
-          <li>Real photo examples from our jobs</li>
-          <li>FAQ + Milestones &amp; Wins tracker</li>
-        </ul>
-        <a href="/start" class="btn btn-lg btn-gold">Join the Launch List →</a>
+    <div class="pcar">
+      <div class="pcar-view">
+        <div class="pcar-track" id="pcarTrack">
+        <div class="pcar-slide">
+          <div class="price-card featured">
+            <span class="flag-top">Start Here</span>
+            <h3>The HomeGuard™ Guide</h3>
+            <div class="price">$7.99</div>
+            <div class="per">one-time PDF · launching soon</div>
+            <ul>
+              <li>The 5-step monthly rhythm (36 pages)</li>
+              <li>Seasonal calendar for MD &amp; DC weather</li>
+              <li>Contractor Red Flag Checklist</li>
+              <li>Printable trackers, logs &amp; call sheets</li>
+              <li>Real photo examples from our jobs</li>
+              <li>FAQ + Milestones &amp; Wins tracker</li>
+            </ul>
+            <a href="/start" class="btn btn-lg btn-gold">Join the Launch List →</a>
+          </div>
+        </div>
+        <div class="pcar-slide">
+          <div class="price-card">
+            <h3>Contractor Clarity™</h3>
+            <div class="price">$7.99</div>
+            <div class="per">one-time PDF · launching soon</div>
+            <ul>
+              <li>Verify any MHIC or DC license in minutes</li>
+              <li>The three-bid rule and safe deposit caps</li>
+              <li>The red flags that signal a scam</li>
+              <li>A quote-comparison worksheet</li>
+              <li>The questions to ask before you sign</li>
+            </ul>
+            <a href="/start" class="btn btn-lg btn-gold">Join the Launch List →</a>
+          </div>
+        </div>
+        <div class="pcar-slide">
+          <div class="price-card">
+            <h3>The Interior Guide</h3>
+            <div class="price">$7.99</div>
+            <div class="per">one-time PDF · launching soon</div>
+            <ul>
+              <li>Plumbing, HVAC &amp; electrical basics</li>
+              <li>A simple seasonal interior routine</li>
+              <li>What to check monthly vs yearly</li>
+              <li>When to DIY vs call a licensed pro</li>
+              <li>Printable interior checklists</li>
+            </ul>
+            <a href="/start" class="btn btn-lg btn-gold">Join the Launch List →</a>
+          </div>
+        </div>
+        <div class="pcar-slide">
+          <div class="price-card">
+            <h3>Maintenance Coaching</h3>
+            <div class="price">Quote</div>
+            <div class="per">Maryland &amp; DC homes only</div>
+            <ul>
+              <li>Guided walkthrough — we run the HomeGuard™ routine with you</li>
+              <li>Personalized seasonal maintenance calendar</li>
+              <li>Your questions answered on the spot</li>
+              <li>Education only — not a licensed home inspection</li>
+            </ul>
+            <a href="mailto:hello@abhomesolutions.pro?subject=Maintenance%20Coaching%20Quote" class="btn btn-lg btn-navy-solid">Request a Quote</a>
+          </div>
+        </div>
+        </div>
       </div>
-      <div class="price-card reveal d1">
-        <h3>HomeGuard™ Pro</h3>
-        <div class="price">$49</div>
-        <div class="per">per year · cancel anytime</div>
-        <ul>
-          <li>Everything in the Guide</li>
-          <li>Monthly email reminders, timed to season</li>
-          <li>Digital fill-in trackers (no printing)</li>
-          <li>Storm-alert prep notices for the DMV</li>
-          <li>Priority email Q&amp;A with our team</li>
-        </ul>
-        <a href="/pro" class="btn btn-lg btn-navy-solid">See What's Inside →</a>
-      </div>
-      <div class="price-card reveal d2">
-        <h3>Maintenance Coaching</h3>
-        <div class="price">Quote</div>
-        <div class="per">Maryland &amp; DC homes only</div>
-        <ul>
-          <li>Guided walkthrough — we run the HomeGuard™ routine with you</li>
-          <li>Personalized seasonal maintenance calendar</li>
-          <li>Your questions answered on the spot</li>
-          <li>Education only — not a licensed home inspection</li>
-        </ul>
-        <a href="mailto:hello@abhomesolutions.pro?subject=Maintenance%20Coaching%20Quote" class="btn btn-lg btn-navy-solid">Request a Quote</a>
+      <div class="pcar-nav">
+        <button class="pcar-arrow" id="pcarPrev" aria-label="Previous products">‹</button>
+        <div class="pcar-dots" id="pcarDots"></div>
+        <button class="pcar-arrow" id="pcarNext" aria-label="Next products">›</button>
       </div>
     </div>
-    <p class="buy-fineprint">The complete guide is launching soon — join the list and we'll email you the moment it's ready. Free checklists are available now.</p>
+    <script>
+    (function(){
+      var track=document.getElementById('pcarTrack'),dotsWrap=document.getElementById('pcarDots'),slides=4,page=0;
+      function perView(){return window.innerWidth<=640?1:2;}
+      function pages(){return Math.ceil(slides/perView());}
+      function renderDots(){dotsWrap.innerHTML='';for(var i=0;i<pages();i++){(function(idx){var d=document.createElement('button');d.className='pcar-dot'+(idx===page?' on':'');d.setAttribute('aria-label','Go to page '+(idx+1));d.onclick=function(){go(idx);};dotsWrap.appendChild(d);})(i);}}
+      function go(p){var mx=pages()-1;page=p<0?mx:(p>mx?0:p);track.style.transform='translateX(-'+(page*100)+'%)';renderDots();}
+      document.getElementById('pcarPrev').onclick=function(){go(page-1);};
+      document.getElementById('pcarNext').onclick=function(){go(page+1);};
+      var rt;window.addEventListener('resize',function(){clearTimeout(rt);rt=setTimeout(function(){if(page>pages()-1)page=pages()-1;go(page);},150);});
+      renderDots();
+    })();
+    </script>
+    <p class="buy-fineprint">The guides are launching soon — join the list and we'll email you the moment they're ready. Free checklists are available now.</p>
   </div>
 </section>
 

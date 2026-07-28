@@ -4,7 +4,6 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>HomeGuard™ System — Monthly Home Maintenance Plan for the DMV</title>
-<link rel="canonical" href="https://www.abhomesolutions.pro/homeguard">
 <meta name="description" content="HomeGuard™ is a simple monthly exterior home-maintenance system for Maryland & DC homeowners — a 5-step outdoor walkthrough, seasonal checklists, and contractor red flags. The complete guide is $7.99.">
 
 <meta property="og:title" content="HomeGuard™ System — Monthly Home Maintenance Plan for the DMV">
@@ -342,8 +341,7 @@ footer ul a:hover{color:var(--gold)}
       AB Home Solutions<small>HOMEGUARD™</small>
     </a>
     <nav class="navlinks" id="nav">
-      <a href="/resources" class="">Resources</a><a href="/homeguard" class="active">HomeGuard™</a>
-            <a href="/contractor-clarity" class="">Contractor Clarity™</a><a href="/blog" class="">Blog</a><a href="/about" class="">About</a>
+      <a href="/resources" class="">Resources</a><a href="/homeguard" class="active">HomeGuard™</a><a href="/blog" class="">Blog</a><a href="/about" class="">About</a>
       <a href="#buy" class="btn btn-gold">Get the Guide · $7.99</a>
     </nav>
     <button class="menu-btn" id="menuBtn" aria-label="Menu" aria-expanded="false"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4 7h16M4 12h16M4 17h16"/></svg></button>
@@ -394,7 +392,7 @@ footer ul a:hover{color:var(--gold)}
     <div class="sec-head reveal">
       <span class="eyebrow">What It Covers</span>
       <h2>Your exterior, top to bottom</h2>
-      <p class="lead">HomeGuard™ focuses on the outside of your home — where weather, water, and time do the most expensive damage. Inside upkeep — plumbing, HVAC, and electrical basics — is covered by our <a href="/resources" style="color:var(--gold-bright);text-decoration:underline">free checklists</a>.</p>
+      <p class="lead">HomeGuard™ focuses on the outside of your home — where weather, water, and time do the most expensive damage.</p>
     </div>
     <div class="grid g3">
       <div class="card reveal"><div class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4 11l8-7 8 7"/><path d="M6 10v10h12V10"/><path d="M10 20v-5h4v5"/></svg></div><h3>Roof &amp; Gutters</h3><p>Shingles, flashing, drip edge, gutters and downspouts — where leaks and water damage usually begin.</p></div>
@@ -410,17 +408,8 @@ footer ul a:hover{color:var(--gold)}
 
 <section class="section section--cream-soft" id="buy">
   <style>
-    .pcar{position:relative;max-width:780px;margin:0 auto}
-    .pcar-view{overflow:hidden}
-    .pcar-track{display:flex;transition:transform .45s cubic-bezier(.2,.7,.2,1)}
-    .pcar-slide{flex:0 0 50%;padding:16px 10px 4px}
-    .pcar-nav{display:flex;align-items:center;justify-content:center;gap:16px;margin-top:20px}
-    .pcar-arrow{width:44px;height:44px;border-radius:50%;border:1px solid rgba(10,22,40,.18);background:#fff;color:var(--navy);font-size:1.5rem;line-height:1;display:grid;place-items:center;cursor:pointer;transition:.2s}
-    .pcar-arrow:hover{border-color:var(--gold);color:var(--gold-deep)}
-    .pcar-dots{display:flex;gap:9px}
-    .pcar-dot{width:10px;height:10px;border-radius:50%;background:rgba(10,22,40,.16);border:none;cursor:pointer;transition:.2s;padding:0}
-    .pcar-dot.on{background:var(--gold)}
-    @media(max-width:640px){.pcar-slide{flex:0 0 100%}}
+    .price-grid{display:grid;gap:20px;grid-template-columns:repeat(3,1fr)}
+    @media(max-width:880px){.price-grid{grid-template-columns:1fr}}
     .price-card{background:#fff;border:1px solid rgba(10,22,40,.08);border-radius:16px;
       padding:30px 26px;display:flex;flex-direction:column;box-shadow:0 18px 40px -28px rgba(10,22,40,.35)}
     .price-card.featured{border:2px solid var(--gold);position:relative}
@@ -438,99 +427,87 @@ footer ul a:hover{color:var(--gold)}
     .btn-navy-solid{background:var(--navy);color:var(--cream)}
     .btn-navy-solid:hover{background:var(--navy-800);transform:translateY(-2px)}
     .buy-fineprint{text-align:center;color:var(--ink-soft);font-size:.82rem;margin-top:18px}
+    .buy-fineprint a{color:var(--gold-deep)}
+    .bundle-strip{display:flex;flex-wrap:wrap;gap:18px;align-items:center;justify-content:space-between;
+      background:var(--navy);color:var(--cream);border-radius:16px;padding:22px 28px;margin-top:26px}
+    .bundle-strip strong{display:block;font-family:var(--font-display);font-size:1.15rem;margin-bottom:2px}
+    .bundle-strip span{font-size:.92rem;opacity:.85}
+    .bundle-strip b{color:var(--gold)}
+    .bundle-btns{display:flex;gap:10px;flex-wrap:wrap}
+    @media(max-width:640px){.bundle-strip{flex-direction:column;align-items:flex-start}}
   </style>
   <div class="wrap">
     <div class="sec-head reveal">
       <span class="eyebrow">Get HomeGuard™</span>
       <h2>Start for less than a coffee</h2>
-      <p class="lead">One small purchase today — or the whole set. Every guide funds free anti-scam education for DMV homeowners.</p>
+      <p class="lead">One small purchase today — or the full path from guide to pro support. Every tier funds free anti-scam education for DMV homeowners.</p>
     </div>
-    <div class="pcar">
-      <div class="pcar-view">
-        <div class="pcar-track" id="pcarTrack">
-        <div class="pcar-slide">
-          <div class="price-card featured">
-            <span class="flag-top">Start Here</span>
-            <h3>The HomeGuard™ Guide</h3>
-            <div class="price">$7.99</div>
-            <div class="per">one-time PDF · launching soon</div>
-            <ul>
-              <li>The 5-step monthly rhythm (36 pages)</li>
-              <li>Seasonal calendar for MD &amp; DC weather</li>
-              <li>Contractor Red Flag Checklist</li>
-              <li>Printable trackers, logs &amp; call sheets</li>
-              <li>Real photo examples from our jobs</li>
-              <li>FAQ + Milestones &amp; Wins tracker</li>
-            </ul>
-            <a href="/start" class="btn btn-lg btn-gold">Join the Launch List →</a>
-          </div>
-        </div>
-        <div class="pcar-slide">
-          <div class="price-card">
-            <h3>Contractor Clarity™</h3>
-            <div class="price">$7.99</div>
-            <div class="per">one-time PDF · launching soon</div>
-            <ul>
-              <li>Verify any MHIC or DC license in minutes</li>
-              <li>The three-bid rule and safe deposit caps</li>
-              <li>The red flags that signal a scam</li>
-              <li>A quote-comparison worksheet</li>
-              <li>The questions to ask before you sign</li>
-            </ul>
-            <a href="/start" class="btn btn-lg btn-gold">Join the Launch List →</a>
-          </div>
-        </div>
-        <div class="pcar-slide">
-          <div class="price-card">
-            <h3>The Interior Guide</h3>
-            <div class="price">$7.99</div>
-            <div class="per">one-time PDF · launching soon</div>
-            <ul>
-              <li>Plumbing, HVAC &amp; electrical basics</li>
-              <li>A simple seasonal interior routine</li>
-              <li>What to check monthly vs yearly</li>
-              <li>When to DIY vs call a licensed pro</li>
-              <li>Printable interior checklists</li>
-            </ul>
-            <a href="/start" class="btn btn-lg btn-gold">Join the Launch List →</a>
-          </div>
-        </div>
-        <div class="pcar-slide">
-          <div class="price-card">
-            <h3>Maintenance Coaching</h3>
-            <div class="price">Quote</div>
-            <div class="per">Maryland &amp; DC homes only</div>
-            <ul>
-              <li>Guided walkthrough — we run the HomeGuard™ routine with you</li>
-              <li>Personalized seasonal maintenance calendar</li>
-              <li>Your questions answered on the spot</li>
-              <li>Education only — not a licensed home inspection</li>
-            </ul>
-            <a href="mailto:hello@abhomesolutions.pro?subject=Maintenance%20Coaching%20Quote" class="btn btn-lg btn-navy-solid">Request a Quote</a>
-          </div>
-        </div>
-        </div>
+    <div class="price-grid">
+      <div class="price-card featured reveal">
+        <span class="flag-top">Start Here</span>
+        <h3>The HomeGuard™ Guide</h3>
+        <div class="price">$7.99</div>
+        <div class="per">one-time · instant PDF download</div>
+        <ul>
+          <li>The 5-step monthly rhythm (36 pages)</li>
+          <li>Seasonal calendar for MD &amp; DC weather</li>
+          <li>Contractor Red Flag Checklist</li>
+          <li>Printable trackers, logs &amp; call sheets</li>
+          <li>Real photo examples from our jobs</li>
+          <li>FAQ + Milestones &amp; Wins tracker</li>
+        </ul>
+        <a href="/buy-homeguard" class="btn btn-lg btn-gold">Buy &amp; Download — $7.99</a>
       </div>
-      <div class="pcar-nav">
-        <button class="pcar-arrow" id="pcarPrev" aria-label="Previous products">‹</button>
-        <div class="pcar-dots" id="pcarDots"></div>
-        <button class="pcar-arrow" id="pcarNext" aria-label="Next products">›</button>
+      <div class="price-card reveal d1">
+        <h3>Contractor Clarity™ Guide</h3>
+        <div class="price">$7.99</div>
+        <div class="per">one-time · instant PDF download</div>
+        <ul>
+          <li>The five checks that stop a scam cold</li>
+          <li>MD &amp; DC license lookup walkthrough</li>
+          <li>The three-bid rule and deposit caps</li>
+          <li>How to read a quote line by line</li>
+          <li>Scripts for the questions to ask</li>
+        </ul>
+        <a href="/buy-clarity" class="btn btn-lg btn-navy-solid">Buy &amp; Download — $7.99</a>
+      </div>
+      <div class="price-card reveal d2">
+        <h3>The Interior Guide</h3>
+        <div class="price">$7.99</div>
+        <div class="per">one-time · instant PDF download</div>
+        <ul>
+          <li>Plumbing, HVAC &amp; electrical basics</li>
+          <li>Room-by-room seasonal walkthrough</li>
+          <li>What you can fix vs. when to call a pro</li>
+          <li>Printable interior maintenance logs</li>
+          <li>Early-warning signs worth acting on</li>
+        </ul>
+        <a href="/buy-interior" class="btn btn-lg btn-navy-solid">Buy &amp; Download — $7.99</a>
+      </div>
+      <div class="price-card reveal d3">
+        <h3>Maintenance Coaching</h3>
+        <div class="price">Quote</div>
+        <div class="per">Maryland &amp; DC homes only</div>
+        <ul>
+          <li>Guided walkthrough — we run the HomeGuard™ routine with you</li>
+          <li>Personalized seasonal maintenance calendar</li>
+          <li>Your questions answered on the spot</li>
+          <li>Education only — not a licensed home inspection</li>
+        </ul>
+        <a href="mailto:sales@abhomesolutions.pro?subject=Maintenance%20Coaching%20Quote" class="btn btn-lg btn-navy-solid">Request a Quote</a>
       </div>
     </div>
-    <script>
-    (function(){
-      var track=document.getElementById('pcarTrack'),dotsWrap=document.getElementById('pcarDots'),slides=4,page=0;
-      function perView(){return window.innerWidth<=640?1:2;}
-      function pages(){return Math.ceil(slides/perView());}
-      function renderDots(){dotsWrap.innerHTML='';for(var i=0;i<pages();i++){(function(idx){var d=document.createElement('button');d.className='pcar-dot'+(idx===page?' on':'');d.setAttribute('aria-label','Go to page '+(idx+1));d.onclick=function(){go(idx);};dotsWrap.appendChild(d);})(i);}}
-      function go(p){var mx=pages()-1;page=p<0?mx:(p>mx?0:p);track.style.transform='translateX(-'+(page*100)+'%)';renderDots();}
-      document.getElementById('pcarPrev').onclick=function(){go(page-1);};
-      document.getElementById('pcarNext').onclick=function(){go(page+1);};
-      var rt;window.addEventListener('resize',function(){clearTimeout(rt);rt=setTimeout(function(){if(page>pages()-1)page=pages()-1;go(page);},150);});
-      renderDots();
-    })();
-    </script>
-    <p class="buy-fineprint">The guides are launching soon — join the list and we'll email you the moment they're ready. Free checklists are available now.</p>
+        <div class="bundle-strip reveal">
+      <div>
+        <strong>Save with a bundle</strong>
+        <span>Any 2 guides for <b>$13.50</b> · All 3 for <b>$18</b></span>
+      </div>
+      <div class="bundle-btns">
+        <a href="/buy-bundle-2" class="btn btn-navy-solid">Any 2 — $13.50</a>
+        <a href="/buy-bundle-3" class="btn btn-gold">All 3 — $18</a>
+      </div>
+    </div>
+<p class="buy-fineprint">Secure checkout by Stripe · Instant download · Not happy? Reply to your receipt within 30 days for a full refund.<br>Questions about a purchase? <a href="mailto:support@abhomesolutions.pro">support@abhomesolutions.pro</a></p>
   </div>
 </section>
 
@@ -547,6 +524,7 @@ footer ul a:hover{color:var(--gold)}
         <ul>
           <li><a href="/homeguard">HomeGuard™ System</a></li>
           <li><a href="/contractor-clarity">Contractor Clarity™</a></li>
+          <li><a href="/interior">The Interior Guide</a></li>
           <li><a href="/resources">Guides &amp; Checklists</a></li>
           <li><a href="/blog">Knowledge Base</a></li>
           <li><a href="/references">Code &amp; Standards References</a></li>
@@ -567,23 +545,6 @@ footer ul a:hover{color:var(--gold)}
           <li><a href="https://instagram.com/ab.home.solutions" target="_blank" rel="noopener">Instagram</a></li>
           <li><a href="/homeguard#buy">Get the Guide · $7.99</a></li><li><a href="/start">Free Checklists</a></li>
           <li><a href="/about">Our Mission</a></li>
+        <li><a href="mailto:hello@abhomesolutions.pro">hello@abhomesolutions.pro</a></li>
           <li><a href="/start">Newsletter</a></li>
-        </ul>
-      </div>
-    </div>
-    <div class="foot-bottom">
-      <span>© 2026 AB Home Solutions. All rights reserved. · abhomesolutions.pro</span>
-      <span>Homeowner Resources · Maryland &amp; DC · Education Over Profits</span>
-    </div>
-  </div>
-</footer>
-<script>
-(function(){
-  var b=document.getElementById('menuBtn'),n=document.getElementById('nav');
-  if(b){b.addEventListener('click',function(){var o=n.classList.toggle('open');
-    b.setAttribute('aria-expanded',o);});}
-})();
-</script>
-
-</body>
-</html>
+        </ul

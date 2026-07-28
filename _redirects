@@ -1,13 +1,39 @@
-# Checkout: /buy -> Stripe Payment Link for the $7.99 HomeGuard Guide.
-# Create the product + Payment Link in Stripe, set its after-payment redirect to
-# https://abhomesolutions.pro/guide-download then replace the URL below.
-/buy  https://buy.stripe.com/REPLACE_WITH_PAYMENT_LINK  302!
+# ─────────────────────────────────────────────────────────────
+# CHECKOUT ROUTES
+# Create each product in Stripe → Payment Link → set the
+# after-payment redirect to https://abhomesolutions.pro/guide-download
+# then replace the REPLACE_… URL below with the real link.
+# ─────────────────────────────────────────────────────────────
 
-# HomeGuard Pro was retired — send old Pro URLs to the guides page.
-/pro          /homeguard  301!
-/pro-welcome  /homeguard  301!
+# HomeGuard™ Guide — $7.99 one-time
+/buy-homeguard   https://buy.stripe.com/REPLACE_HOMEGUARD_LINK   302!
 
-# Netlify redirects for AB Home Solutions
-# Blog posts live as <slug>.html at the repo root, but are linked as
-# /blog/<slug>. This rewrite serves the matching file without changing the URL.
-/blog/*  /:splat.html  200
+# Contractor Clarity™ Guide — $7.99 one-time
+/buy-clarity     https://buy.stripe.com/REPLACE_CLARITY_LINK     302!
+
+# The Interior Guide — $7.99 one-time
+/buy-interior    https://buy.stripe.com/REPLACE_INTERIOR_LINK    302!
+
+# Any 2 guides — $13.50
+# NOTE: add a dropdown custom field in Stripe so the buyer picks which two.
+/buy-bundle-2    https://buy.stripe.com/REPLACE_BUNDLE2_LINK     302!
+
+# All 3 guides — $18
+/buy-bundle-3    https://buy.stripe.com/REPLACE_BUNDLE3_LINK     302!
+
+# Legacy /buy → HomeGuard guide (keeps old links and receipts working)
+/buy             /buy-homeguard                                  301!
+
+# ─────────────────────────────────────────────────────────────
+# RETIRED PRO TIER — 301 so nothing 404s
+# ─────────────────────────────────────────────────────────────
+/pro             /homeguard#buy                                  301!
+/pro-welcome     /homeguard#buy                                  301!
+/buy-pro         /homeguard#buy                                  301!
+
+# ─────────────────────────────────────────────────────────────
+# BLOG
+# Posts live as <slug>.html at the repo root but are linked as
+# /blog/<slug>. This rewrite serves the file without changing the URL.
+# ─────────────────────────────────────────────────────────────
+/blog/*          /:splat.html                                    200

@@ -4,7 +4,6 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>AB Home Solutions — Homeowner Resources for Maryland & DC | HomeGuard™</title>
-<link rel="canonical" href="https://www.abhomesolutions.pro/">
 <meta name="description" content="Free, honest home-maintenance resources for Maryland & DC homeowners. Learn to maintain your home inside and out and avoid predatory contractors — the HomeGuard™ way. Education over profits.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -26,18 +25,14 @@
   .eyebrow{font-size:12px;font-weight:700;letter-spacing:.22em;text-transform:uppercase;color:var(--gold);display:inline-flex;align-items:center;gap:9px}
   .eyebrow::before{content:"";width:26px;height:2px;background:var(--gold)}
   header.nav{position:sticky;top:0;z-index:50;background:rgba(10,22,40,.86);backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
-  .nav .wrap{display:flex;align-items:center;gap:22px;height:72px}
-  .brand{display:flex;align-items:center;gap:11px;font-family:'Archivo';font-weight:800;text-transform:uppercase;letter-spacing:.04em;font-size:15px;color:var(--cream);margin-right:auto;white-space:nowrap;flex:none}
-  .brand .badge{width:34px;height:34px;display:grid;place-items:center;background:var(--gold);border-radius:9px;color:var(--navy);flex:none}
-  .brand .badge svg{width:20px;height:20px}
-  .brand small{display:block;font-size:10px;letter-spacing:.16em;color:var(--gold);font-weight:700;margin-top:1px}
-  nav.links{display:flex;gap:24px;align-items:center;flex:none}
-  nav.links a{font-weight:600;font-size:13px;text-transform:uppercase;letter-spacing:.08em;color:var(--cream-dim);white-space:nowrap;transition:color .2s}
+  .nav .wrap{display:flex;align-items:center;justify-content:space-between;height:72px}
+  .brand{display:flex;align-items:center;gap:11px;font-family:'Archivo';font-weight:800;text-transform:uppercase;letter-spacing:.04em;font-size:16px;color:var(--cream)}
+  .brand .shield{width:30px;height:34px;flex:none}
+  .brand .tm{color:var(--gold);font-size:11px;vertical-align:super}
+  nav.links{display:flex;gap:30px;align-items:center}
+  nav.links a{font-weight:600;font-size:13px;text-transform:uppercase;letter-spacing:.08em;color:var(--cream-dim);transition:color .2s}
   nav.links a:hover{color:var(--gold-bright)}
-  .menu-btn{display:none;background:none;border:1px solid var(--line);border-radius:9px;width:42px;height:42px;color:var(--cream);cursor:pointer;place-items:center;transition:border-color .2s}
-  .menu-btn:hover{border-color:var(--gold-bright)}
-  .menu-btn svg{width:22px;height:22px}
-  .btn{display:inline-block;font-weight:700;font-size:13px;text-transform:uppercase;letter-spacing:.07em;padding:13px 22px;border-radius:3px;white-space:nowrap;flex:none;transition:.25s;cursor:pointer;border:1px solid var(--gold)}
+  .btn{display:inline-block;font-weight:700;font-size:13px;text-transform:uppercase;letter-spacing:.07em;padding:13px 22px;border-radius:3px;transition:.25s;cursor:pointer;border:1px solid var(--gold)}
   .btn-gold{background:var(--gold);color:var(--navy)}
   .btn-gold:hover{background:var(--gold-bright);transform:translateY(-2px)}
   .btn-ghost{background:transparent;color:var(--gold)}
@@ -104,18 +99,6 @@
   .post h3{font-family:'Newsreader';font-weight:500;font-size:21px;color:var(--cream);margin:11px 0 14px;line-height:1.22}
   .post .meta{margin-top:auto;font-size:13px;color:var(--cream-dim);font-family:'Archivo';letter-spacing:.04em;text-transform:uppercase;display:flex;justify-content:space-between}
   .post .meta .read{color:var(--gold)}
-  /* Knowledge Base (#blog) — white background, navy text */
-  #blog{background:#ffffff}
-  #blog .eyebrow{color:#9a6e16}
-  #blog .eyebrow::before{background:#9a6e16}
-  #blog .section-head h2{color:var(--navy)}
-  #blog .section-head p{color:#41506a}
-  #blog .post{background:#ffffff;border-color:rgba(10,22,40,.12);box-shadow:0 14px 34px -20px rgba(10,22,40,.45)}
-  #blog .post:hover{border-color:var(--gold)}
-  #blog .post .cat{color:#9a6e16}
-  #blog .post h3{color:var(--navy)}
-  #blog .post .meta{color:#41506a}
-  #blog .post .meta .read{color:#9a6e16}
   .mission{text-align:center;max-width:44em;margin:0 auto}
   .mission .big{font-family:'Newsreader';font-size:clamp(24px,3.4vw,36px);line-height:1.32;color:var(--cream)}
   .mission .big b{color:var(--gold-bright);font-weight:500}
@@ -129,20 +112,15 @@
   .fbrand .tm{color:var(--gold);font-size:10px;vertical-align:super}
   .fnote{max-width:26em;font-size:15px}
   .fbar{border-top:1px solid rgba(212,161,60,.14);margin-top:40px;padding-top:22px;font-size:13px;font-family:'Archivo';letter-spacing:.04em;text-transform:uppercase;color:#7d8aa0;display:flex;justify-content:space-between;flex-wrap:wrap;gap:10px}
-  @media(max-width:900px){
-    .menu-btn{display:grid}
-    .nav .wrap>.btn-gold{display:none}
-    nav.links{position:absolute;top:calc(100% + 8px);left:0;right:0;flex-direction:column;align-items:stretch;gap:0;background:var(--navy-2);border:1px solid var(--line);border-radius:12px;padding:6px 16px;transform:translateY(-14px);opacity:0;pointer-events:none;transition:transform .28s,opacity .28s;box-shadow:0 24px 50px -20px rgba(0,0,0,.55)}
-    nav.links.open{transform:none;opacity:1;pointer-events:auto}
-    nav.links a{padding:13px 2px;width:100%;border-bottom:1px solid rgba(245,241,230,.08);font-size:15px}
-    nav.links a:last-child{border-bottom:none}
+  @media(max-width:880px){
+    nav.links{display:none}
     .hero .grid,.hg .grid,.signup .wrap{grid-template-columns:1fr;gap:34px}
     .services{grid-template-columns:1fr 1fr}.posts{grid-template-columns:1fr}
     .signup .box{text-align:left}.fgrid{grid-template-columns:1fr 1fr}.trust .wrap{justify-content:flex-start}
   }
   @media(max-width:520px){.services{grid-template-columns:1fr}.fgrid{grid-template-columns:1fr}}
 </style>
-<script type="application/ld+json">{"@context": "https://schema.org", "@type": "Organization", "name": "AB Home Solutions", "url": "https://www.abhomesolutions.pro/", "description": "Free, honest home-maintenance and anti-scam resources for Maryland and DC homeowners.", "areaServed": [{"@type": "AdministrativeArea", "name": "Maryland"}, {"@type": "AdministrativeArea", "name": "Washington, DC"}], "sameAs": ["https://instagram.com/ab.home.solutions"]}</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "Organization", "name": "AB Home Solutions", "url": "https://www.abhomesolutions.pro/", "description": "Free, honest home-maintenance and anti-scam resources for Maryland and DC homeowners.", "areaServed": [{"@type": "AdministrativeArea", "name": "Maryland"}, {"@type": "AdministrativeArea", "name": "Washington, DC"}], "sameAs": ["https://instagram.com/ab.home.solutions"], "email": "hello@abhomesolutions.pro", "contactPoint": [{"@type": "ContactPoint", "contactType": "customer support", "email": "support@abhomesolutions.pro", "areaServed": ["US-MD", "US-DC"], "availableLanguage": ["English", "Spanish"]}, {"@type": "ContactPoint", "contactType": "sales", "email": "sales@abhomesolutions.pro", "areaServed": ["US-MD", "US-DC"], "availableLanguage": ["English", "Spanish"]}, {"@type": "ContactPoint", "contactType": "customer service", "email": "hello@abhomesolutions.pro", "areaServed": ["US-MD", "US-DC"], "availableLanguage": ["English", "Spanish"]}]}</script>
 <script type="application/ld+json">{"@context": "https://schema.org", "@type": "WebSite", "name": "AB Home Solutions", "url": "https://www.abhomesolutions.pro/"}</script>
 </head>
 <body>
@@ -150,18 +128,16 @@
 <header class="nav">
   <div class="wrap">
     <a href="/" class="brand">
-      <span class="badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3l7 3v5c0 4.5-3 7.5-7 9-4-1.5-7-4.5-7-9V6l7-3z"/></svg></span>
-      AB Home Solutions<small>HOMEGUARD™</small>
+      <svg class="shield" viewBox="0 0 30 34" fill="none"><path d="M15 1 28 6v11c0 9-6.5 13.5-13 16C8.5 30.5 2 26 2 17V6L15 1Z" stroke="#d4a13c" stroke-width="2" fill="rgba(212,161,60,.08)"/><path d="M9.5 16.5l3.8 3.8 7-8" stroke="#f0c14b" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      AB Home Solutions <span class="tm">HomeGuard™</span>
     </a>
-    <nav class="links" id="navMenu">
+    <nav class="links">
       <a href="/resources">Resources</a>
       <a href="/homeguard">HomeGuard™</a>
-      <a href="/contractor-clarity">Contractor Clarity™</a>
       <a href="/blog">Blog</a>
       <a href="/about">About</a>
     </nav>
     <a href="/homeguard#buy" class="btn btn-gold">Get the Guide · $7.99</a>
-    <button class="menu-btn" id="menuBtn" aria-label="Menu" aria-expanded="false"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4 7h16M4 12h16M4 17h16"/></svg></button>
   </div>
 </header>
 
@@ -216,6 +192,11 @@
         <svg class="ico" viewBox="0 0 40 40" fill="none"><path d="M20 4l14 5v9c0 9-6 14-14 18-8-4-14-9-14-18V9l14-5Z" stroke="currentColor" stroke-width="2.4" stroke-linejoin="round"/><path d="M13 20l4.5 4.5L28 14" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg>
         <h3>Contractor Clarity™</h3>
         <p>A step-by-step framework for vetting and choosing reputable local pros — before you sign anything.</p>
+      </a>
+      <a class="svc" href="/interior">
+        <svg class="ico" viewBox="0 0 40 40" fill="none"><path d="M5 17 20 5l15 12v18H5V17Z" stroke="currentColor" stroke-width="2.4" stroke-linejoin="round"/><path d="M15 35V23h10v12" stroke="currentColor" stroke-width="2.4" stroke-linejoin="round"/></svg>
+        <h3>The Interior Guide</h3>
+        <p>Plumbing, HVAC, electrical and seasonal upkeep — what to check inside your home, and when to call a licensed pro.</p>
       </a>
       <a class="svc" href="/resources">
         <svg class="ico" viewBox="0 0 40 40" fill="none"><path d="M10 4h14l6 6v26H10V4Z" stroke="currentColor" stroke-width="2.4" stroke-linejoin="round"/><path d="M24 4v6h6M15 22l3 3 7-7" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg>
@@ -315,6 +296,7 @@
       <div><h4>Resources</h4><ul>
         <li><a href="/homeguard">HomeGuard™ System</a></li>
         <li><a href="/contractor-clarity">Contractor Clarity™</a></li>
+          <li><a href="/interior">The Interior Guide</a></li>
         <li><a href="/resources">Guides &amp; Checklists</a></li>
         <li><a href="/blog">Knowledge Base</a></li>
           <li><a href="/references">Code &amp; Standards References</a></li>
@@ -329,6 +311,7 @@
         <li><a href="https://instagram.com/ab.home.solutions" target="_blank" rel="noopener">Instagram</a></li>
         <li><a href="/homeguard#buy">Get the Guide · $7.99</a></li><li><a href="/start">Free Checklists</a></li>
         <li><a href="/about">Our Mission</a></li>
+        <li><a href="mailto:hello@abhomesolutions.pro">hello@abhomesolutions.pro</a></li>
         <li><a href="/start">Newsletter</a></li>
       </ul></div>
     </div>
@@ -339,8 +322,5 @@
   </div>
 </footer>
 
-<script>
-(function(){var b=document.getElementById('menuBtn'),n=document.getElementById('navMenu');if(b&&n){b.addEventListener('click',function(){var o=n.classList.toggle('open');b.setAttribute('aria-expanded',o);});n.addEventListener('click',function(e){if(e.target.tagName==='A')n.classList.remove('open');});}})();
-</script>
 </body>
 </html>

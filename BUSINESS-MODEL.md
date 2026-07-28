@@ -18,8 +18,8 @@ volume. A $7.99 buyer is 10× more likely to buy Pro or book a visit than a free
 downloader. Profit at Tier 1 is marketing budget, not income.
 
 ## Unit economics (Tier 1)
-- Stripe fee on $7.99 ≈ $0.53 → net ≈ $7.46/sale
-- 1,000 sales ≈ $7,460 — modest. The asset is 1,000 *buyer* emails.
+- Stripe fee on $7.99 ≈ $0.42 → net ≈ $3.57/sale
+- 1,000 sales ≈ $3,570 — modest. The asset is 1,000 *buyer* emails.
 - At a 5% Pro conversion: 50 × $49 = $2,450/yr recurring, compounding annually.
 
 ## Current implementation (this repo)

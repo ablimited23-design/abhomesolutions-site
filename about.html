@@ -4,7 +4,6 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Our Mission — Honest Home Resources for the DMV | AB Home Solutions</title>
-<link rel="canonical" href="https://www.abhomesolutions.pro/about">
 <meta name="description" content="Why AB Home Solutions exists: free, honest home-maintenance knowledge to help Maryland & DC homeowners — especially seniors — avoid predatory contractors.">
 
 <meta property="og:title" content="Our Mission — Honest Home Resources for the DMV | AB Home Solutions">
@@ -272,21 +271,19 @@ section{position:relative;z-index:2}
   letter-spacing:0;margin-bottom:6px}
 .value p{font-size:.88rem;color:var(--mist)}
 
-/* is / isn't — checklist rows */
-.compare{display:grid;grid-template-columns:1fr 1fr;gap:40px}
-.compare h4{font-family:var(--font-display);font-weight:800;text-transform:uppercase;letter-spacing:.05em;font-size:1rem;display:inline-flex;align-items:center;gap:11px;margin-bottom:14px}
-.compare h4 .ic{width:30px;height:30px;border-radius:8px;display:grid;place-items:center;flex:none}
-.compare h4 .ic svg{width:17px;height:17px}
-.compare .yes h4{color:var(--gold-bright)}
-.compare .yes h4 .ic{background:var(--gold);color:var(--navy)}
-.compare .no h4{color:var(--cream)}
-.compare .no h4 .ic{background:var(--navy-600);color:#e2674f}
-.compare ul{list-style:none;display:grid;gap:2px}
-.compare li{display:flex;gap:12px;align-items:flex-start;font-size:.95rem;line-height:1.45;color:var(--mist);padding:12px 4px;border-bottom:1px solid var(--line-soft)}
-.compare li:last-child{border-bottom:none}
-.compare li svg{width:17px;height:17px;flex:none;margin-top:3px}
-.compare .yes li svg{color:var(--gold-bright)}
-.compare .no li svg{color:#e2674f}
+/* is / isn't */
+.compare{display:grid;grid-template-columns:1fr 1fr;gap:20px}
+.compare .col{padding:28px;border-radius:var(--r)}
+.compare .yes{background:rgba(224,165,46,.1);border:1px solid var(--line)}
+.compare .no{background:var(--navy-700);border:1px solid var(--line-soft)}
+.compare h4{font-family:var(--font-display);text-transform:uppercase;letter-spacing:.06em;
+  font-size:.9rem;margin-bottom:16px;display:flex;align-items:center;gap:9px}
+.compare .yes h4{color:var(--gold)}
+.compare ul{list-style:none;display:grid;gap:11px}
+.compare li{font-size:.95rem;color:var(--mist);padding-left:20px;position:relative}
+.compare li::before{content:"";position:absolute;left:0;top:9px;width:7px;height:7px;
+  border-radius:50%;background:var(--gold)}
+.compare .no li::before{background:var(--mist-dim)}
 
 /* thank you */
 .ty{text-align:center;max-width:620px;margin:0 auto}
@@ -344,8 +341,7 @@ footer ul a:hover{color:var(--gold)}
       AB Home Solutions<small>HOMEGUARD™</small>
     </a>
     <nav class="navlinks" id="nav">
-      <a href="/resources" class="">Resources</a><a href="/homeguard" class="">HomeGuard™</a>
-            <a href="/contractor-clarity" class="">Contractor Clarity™</a><a href="/blog" class="">Blog</a><a href="/about" class="active">About</a>
+      <a href="/resources" class="">Resources</a><a href="/homeguard" class="">HomeGuard™</a><a href="/blog" class="">Blog</a><a href="/about" class="active">About</a>
       <a href="/homeguard#buy" class="btn btn-gold">Get the Guide · $7.99</a>
     </nav>
     <button class="menu-btn" id="menuBtn" aria-label="Menu" aria-expanded="false"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4 7h16M4 12h16M4 17h16"/></svg></button>
@@ -377,27 +373,6 @@ footer ul a:hover{color:var(--gold)}
   </div>
 </section>
 
-<section class="section" id="founder">
-  <div class="wrap">
-    <div class="split">
-      <div class="reveal">
-        <div style="width:150px;height:150px;border-radius:22px;background:linear-gradient(155deg,var(--gold-bright),var(--gold-deep));display:grid;place-items:center;box-shadow:var(--shadow);margin-bottom:22px">
-          <span style="font-family:var(--font-display);font-weight:800;font-size:3.6rem;line-height:1;color:var(--navy);letter-spacing:.03em">AB</span>
-        </div>
-        <h3 style="font-family:var(--font-display);font-size:1.55rem;color:var(--cream);margin:0">Ariel Blanco</h3>
-        <p style="color:var(--gold);font-weight:600;letter-spacing:.02em;margin:5px 0 0">Founder · AB Home Solutions</p>
-      </div>
-      <div class="reveal">
-        <span class="eyebrow">Meet the Founder</span>
-        <h2 style="margin:14px 0 20px">The guy homeowners kept asking</h2>
-        <p class="lead" style="margin-bottom:16px">Ariel Blanco started in the field — doing the hands-on exterior labor behind home renovations: roofing, gutters, and siding. He moved into sales, inspecting roofs, gutters, and siding for homeowners across the DMV and walking them through exactly what he found.</p>
-        <p class="lead" style="margin-bottom:16px">What he kept running into wasn’t a sales problem — it was a trust gap. Homeowners asked him question after question, often about trades he didn’t even work in, because they had a hunch he’d give them a straight answer. So he started writing guides, drawing illustrations, and posting on his own social media about what to really expect from a project.</p>
-        <p class="lead">AB Home Solutions is the next step: honest guidance for people who want the best work at the right price. Most homeowners are glad to pay fairly when the work is genuinely what it’s promised to be — and that trust is exactly what predatory contractors exploit. This site exists to close that gap.</p>
-      </div>
-    </div>
-  </div>
-</section>
-
 <section class="section section--light">
   <div class="wrap">
     <div class="sec-head reveal">
@@ -420,23 +395,23 @@ footer ul a:hover{color:var(--gold)}
       <h2>What AB Home Solutions is — and isn't</h2>
     </div>
     <div class="compare reveal">
-      <div class="yes">
-        <h4><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg></span>We are</h4>
+      <div class="col yes">
+        <h4><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3l7 3v5c0 4.5-3 7.5-7 9-4-1.5-7-4.5-7-9V6l7-3z"/></svg> We are</h4>
         <ul>
-          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg>A free homeowner education and resources hub</li>
-          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg>A library of guides, checklists, and plain-English articles</li>
-          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg>A framework for vetting and hiring contractors wisely</li>
-          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg>Focused on protecting your home and your money</li>
-          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg>Free where we say free — our blog, checklists, and starter guides cost nothing; the full guides are $7.99 each, and that small price funds the free education everyone else gets</li>
+          <li>A free homeowner education and resources hub</li>
+          <li>A library of guides, checklists, and plain-English articles</li>
+          <li>A framework for vetting and hiring contractors wisely</li>
+          <li>Focused on protecting your home and your money</li>
+          <li>Free where we say free — our blog, checklists, and starter guides cost nothing; the complete HomeGuard™ Guide is a one-time $7.99, and that small price funds the free education everyone else gets</li>
         </ul>
       </div>
-      <div class="no">
-        <h4><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M6 6l12 12M18 6L6 18"/></svg></span>We are not</h4>
+      <div class="col no">
+        <h4><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M6 6l12 12M18 6L6 18"/></svg> We are not</h4>
         <ul>
-          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M6 6l12 12M18 6L6 18"/></svg>A contractor or repair company</li>
-          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M6 6l12 12M18 6L6 18"/></svg>Selling roofing, repairs, or physical home services</li>
-          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M6 6l12 12M18 6L6 18"/></svg>Taking a cut from any pro you choose to hire</li>
-          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M6 6l12 12M18 6L6 18"/></svg>Here to pressure you into anything</li>
+          <li>A contractor or repair company</li>
+          <li>Selling roofing, repairs, or physical home services</li>
+          <li>Taking a cut from any pro you choose to hire</li>
+          <li>Here to pressure you into anything</li>
         </ul>
       </div>
     </div>
@@ -449,8 +424,9 @@ footer ul a:hover{color:var(--gold)}
       <h2>Start with the HomeGuard™ Guide — $7.99</h2>
       <p class="lead">Join Maryland and DC homeowners taking control of their homes — one honest, free resource at a time.</p>
       <div class="cta-row" style="justify-content:center">
-        <a href="/homeguard#buy" class="btn btn-lg btn-navy">Get the Guide · $7.99 →</a><a href="https://instagram.com/ab.home.solutions" class="btn btn-lg btn-outline">Follow @ab.home.solutions</a>
+        <a href="/homeguard#buy" class="btn btn-lg btn-navy">Get the Guide · $7.99 →</a><a href="https://instagram.com/ab.home.solutions" class="btn btn-lg btn-outline">Follow @ab.home.solutions</a><a href="mailto:hello@abhomesolutions.pro" class="btn btn-lg btn-outline">Email Us</a>
       </div>
+      <p style="margin-top:20px;font-size:.9rem;color:var(--ink-soft)">General inquiries: <a href="mailto:info@abhomesolutions.pro" style="color:var(--gold-deep)">info@abhomesolutions.pro</a> · Press &amp; partnerships welcome.</p>
     </div>
   </div>
 </section>
@@ -468,6 +444,7 @@ footer ul a:hover{color:var(--gold)}
         <ul>
           <li><a href="/homeguard">HomeGuard™ System</a></li>
           <li><a href="/contractor-clarity">Contractor Clarity™</a></li>
+          <li><a href="/interior">The Interior Guide</a></li>
           <li><a href="/resources">Guides &amp; Checklists</a></li>
           <li><a href="/blog">Knowledge Base</a></li>
           <li><a href="/references">Code &amp; Standards References</a></li>
@@ -488,6 +465,7 @@ footer ul a:hover{color:var(--gold)}
           <li><a href="https://instagram.com/ab.home.solutions" target="_blank" rel="noopener">Instagram</a></li>
           <li><a href="/homeguard#buy">Get the Guide · $7.99</a></li><li><a href="/start">Free Checklists</a></li>
           <li><a href="/about">Our Mission</a></li>
+        <li><a href="mailto:hello@abhomesolutions.pro">hello@abhomesolutions.pro</a></li>
           <li><a href="/start">Newsletter</a></li>
         </ul>
       </div>
